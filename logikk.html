@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <Title>Logikk</Title>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/regelbokStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container"> <!-- Needs to wrap all content in body -->
+
+<div class="verticalBar">
+  <picture>
+    <img src="images/regelbokLogo1.png" style="width: 300px;">
+  </picture>
+
+  <div class="menyStyle">
+    <a class="active" href="logikk.html">Logikk</a><br/>
+    Kapittel 2<br/>
+    Kapittel 3<br/>
+    Kapittel 4<br/>
+  </div>
+</div>
+
+<div class="main col-70 col-tab-70 col-ph-70">
+<h1>Logikk</h1>
+
+  <p>
+    <span class="uppercase-red"> Utsagn: </span>
+    Påstand som enten er sann eller usann.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Utsagnfunksjon: </span>
+    F.eks. P(x): "x + 1 = 2". Her er
+    <span style="text-decoration: underline;">definisjonsmengden</span>
+    de hele tallene.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Tautologi: </span>
+    Et utsagn som alltid er sant.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Kontradiksjon: </span>
+    Selvmotsigelse. Et utsagn som alltid er usant.
+  </p>
+
+  <p><span class="uppercase-red"> Logiske operatorer: </span></p>
+  <table style="margin-top: -10px;">
+    <!-- 1. row. Headings -->
+    <tr>
+      <th>Operator</th>
+      <th>Symbol</th>
+      <th>Leses</th>
+      <th>Java symbol</th>
+    </tr>
+    <!-- 2. row. Negasjon -->
+    <tr>
+      <td>Negasjon</td>
+      <td>&not;</td>
+      <td>ikke</td>
+      <td>!</td>
+    </tr>
+    <!-- 3. row. Konjunksjon -->
+    <tr>
+      <td>Konjunksjon</td>
+      <td>&and;</td>
+      <td>og</td>
+      <td>&&</td>
+    </tr>
+    <!-- 4. row. Disjunksjon -->
+    <tr>
+      <td>Disjunksjon</td>
+      <td>&or;</td>
+      <td>eller</td>
+      <td>||</td>
+    </tr>
+    <!-- 5. row. Xor -->
+    <tr>
+      <td>Xor</td>
+      <td>&oplus;</td>
+      <td>enten eller</td>
+      <td>^</td>
+    </tr>
+    <!-- 6. row. Implikasjon -->
+    <tr>
+      <td>Implikasjon</td>
+      <td>&rarr;</td>
+      <td>impliserer</td>
+      <td></td>
+    </tr>
+    <!-- 7. row. Biimplikasjon -->
+    <tr>
+      <td>Biimplikasjon</td>
+      <td>&harr;</td>
+      <td>hvis og bare hvis</td>
+      <td></td>
+    </tr>
+  </table>
+
+  <p>Måter å lese p &rarr; q:</p>
+  <ul style="margin-top: -10px;">
+    <li>"hvis p, så q"</li>
+    <li>"hvis p, q"</li>
+    <li>"p er tilstrekkelig for q"</li>
+    <li>"q hvis p"</li>
+    <li>"q når p"</li>
+    <li>"en nødvendig betingelse for p er q"</li>
+    <li>"p medfører q"</li>
+    <li>"p bare hvis q"</li>
+    <li>"en tilstrekkelig betingelse for q er p"</li>
+    <li>"q hver gang p"</li>
+    <li>"q er nødvendig for p"</li>
+    <li>"følger av p"</li>
+    <li>"q med mindre ¬p"</li>
+  </ul>
+
+  <p>Måter å lese p &harr; q:</p>
+  <ul style="margin-top: -10px;">
+    <li>"p er nødvendig og tilstrekkelig for q"</li>
+    <li>"p impliserer q og q impliserer p"</li>
+    <li>"hvis p så q og omvendt"</li>
+    <li>"p hvis og bare hvis q"</li>
+  </ul>
+
+  <p><span class="uppercase-red"> Sannhetsverditabeller: </span></p>
+  <table style="margin-top: -10px; float: left;">
+    <tr>
+      <th>p</th>
+      <th>&not;p</th>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>S</td>
+    </tr>
+  </table>
+
+  <table style="margin-top: -10px; float: left; margin-left: 30px;">
+    <tr>
+      <th>p</th>
+      <th>q</th>
+      <th>p&and;q</th>
+      <th>p&or;q</th>
+      <th>p&oplus;q</th>
+      <th>p &rarr; q</th>
+      <th>p &harr; q</th>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>U</td>
+      <td>S</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>U</td>
+      <td>U</td>
+      <td>S</td>
+      <td>S</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>S</td>
+      <td>U</td>
+      <td>S</td>
+      <td>S</td>
+      <td>S</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>S</td>
+      <td>S</td>
+    </tr>
+  </table>
+
+  <p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <span class="uppercase-red"> Kontrapositive utsagn: </span>
+    p &rarr; q har det kontrapositive utsagnet &not;q &rarr; &not;p, og er
+    <span style="text-decoration: underline;"> ekvavilente</span>.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Inverse utsagn: </span>
+    p &rarr; q har det inverse utsagnet &not;p &rarr; &not;q, og er
+    <span style="text-decoration: underline;">ikke ekvavilente</span>.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Omvendt utsagn: </span>
+    p &rarr; q har det omvendte utsagnet q &rarr; p.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Kommutative operatorer: </span>
+    Rekkefølgen på utsagnene er likegyldig. (f.eks. p&or;q = q&or;p).
+  </p>
+
+  <p><span class="uppercase-red"> De Morgan's lover: </span></p>
+  <ul style="margin-top: -10px;">
+    <li>&not;(p&or;q) = &not;p&and;&not;q</li>
+    <li>&not;(p&and;q) = &not;p&or;&not;q</li>
+  </ul>
+
+  <p><span class="uppercase-red"> Distributive lover: </span></p>
+  <ul style="margin-top: -10px;">
+    <li>p&and;(q&or;r) = (p&and;q)&or;(p&and;r)</li>
+    <li>p&or;(q&and;r) = (p&or;q)&and;(p&or;r)</li>
+  </ul>
+
+  <p><span class="uppercase-red"> Assosiative lover: </span></p>
+  <ul style="margin-top: -10px;">
+    <li>p&and;(p&and;r) = (p&and;q)&and;r</li>
+    <li>p&or;(p&or;r) = (p&or;q)&or;r</li>
+  </ul>
+
+  <p><span class="uppercase-red"> Logiske porter: </span></p>
+  <picture>
+    <img src="images/gates.png" style="max-width: 60%;">
+  </picture>
+
+  <p><span class="uppercase-red"> Logisk krets eksempel: </span></p>
+  <picture>
+    <img src="images/krets.png" style="max-width: 60%;">
+  </picture>
+
+  <p><span class="uppercase-red"> Kvantorer: </span></p>
+  <table style="margin-top: -10px; float: left;">
+    <tr>
+      <th>Kvantor</th>
+      <th>Symbol</th>
+      <th>Skrivemåte</th>
+      <th>Leses</th>
+    </tr>
+    <tr>
+      <td>All</td>
+      <td>&forall;</td>
+      <td>&forall;x P(x)</td>
+      <td>P(x): "for alle x gjelder P(x)"</td>
+    </tr>
+    <tr>
+      <td>Eksistens</td>
+      <td>&exist;</td>
+      <td>&exist;x P(x)</td>
+      <td>P(x): "det finnes (minst en)/eksisterer en x slik at P(x)"</td>
+    </tr>
+  </table>
+
+  <p><br/><br/><br/><br/><br/><br/><br/>
+    <span class="uppercase-red"> Nyttige regneregler: </span>
+    <ul style="margin-top: -10px;">
+      <li>&exist;x P(x) = P(x<sub>1</sub>)&or;...&or;P(x<sub>2</sub>)</li>
+      <li>&forall;x P(x) = P(x<sub>1</sub>)&and;...&and;P(x<sub>2</sub>)</li>
+      <li>&not;&forall;x&exist;y P(x,y) = &exist;x&not;&forall;y P(x,y)
+      = &exist;x&forall;y &not;P(x)</li>
+    </ul>
+  </p>
+
+
+
+
+
+</div> <!-- end of main -->
+</div> <!-- end of container -->
+
+</body>
+
+</html>
