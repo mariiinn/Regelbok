@@ -5,7 +5,7 @@
   <Title>Logikk</Title>
   <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="css/regelbokStyle.css">
-  <link type="text/css" rel="stylesheet" href="css/skjermSize.css">
+  <!--<link type="text/css" rel="stylesheet" href="css/skjermSize.css">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -15,8 +15,9 @@
 
 <div class="verticalBar">
   <picture>
+    <!-- margin-left to override hoverefect. -->
     <a href="regelboka.html" style="margin-left: 0px;">
-      <img src="images/regelbokLogo1.png" style="width: 300px;">
+      <img src="images/regelbokLogo1.png" class="logoImage">
     </a>
   </picture>
 
@@ -29,7 +30,7 @@
   </div>
 </div>
 
-<div class="main col-70 col-tab-70 col-ph-70">
+<div class="main col-58 col-tab-48 col-ph-10">
 <h1>Logikk</h1>
 
   <p>
@@ -55,7 +56,7 @@
   </p>
 
   <p><span class="uppercase-red"> Logiske operatorer: </span></p>
-  <table style="margin-top: -10px;">
+  <table class="tableScaling1" style="margin-top: -10px;">
     <!-- 1. row. Headings -->
     <tr>
       <th>Operator</th>
@@ -133,7 +134,7 @@
   </ul>
 
   <p><span class="uppercase-red"> Sannhetsverditabeller: </span></p>
-  <table style="margin-top: -10px; float: left;">
+  <table style="margin-top: -10px;" class="tableScaling2">
     <tr>
       <th>p</th>
       <th>&not;p</th>
@@ -148,7 +149,7 @@
     </tr>
   </table>
 
-  <table style="margin-top: -10px; float: left; margin-left: 30px;">
+  <table class="tableScaling2">
     <tr>
       <th>p</th>
       <th>q</th>
@@ -196,7 +197,7 @@
     </tr>
   </table>
 
-  <p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <p style="clear: both;"> <!-- No floating allowed to the right or left-->
     <span class="uppercase-red"> Kontrapositive utsagn: </span>
     p &rarr; q har det kontrapositive utsagnet &not;q &rarr; &not;p, og er
     <span style="text-decoration: underline;"> ekvavilente</span>.
@@ -238,16 +239,16 @@
 
   <p><span class="uppercase-red"> Logiske porter: </span></p>
   <picture>
-    <img src="images/gates.png" style="max-width: 60%;">
+    <img src="images/gates.png" class="image">
   </picture>
 
   <p><span class="uppercase-red"> Logisk krets eksempel: </span></p>
   <picture>
-    <img src="images/krets.png" style="max-width: 60%;">
+    <img src="images/krets.png" class="image";>
   </picture>
 
   <p><span class="uppercase-red"> Kvantorer: </span></p>
-  <table style="margin-top: -10px; float: left;">
+  <table class="tableScaling1" style="margin-top: -10px; float: left;">
     <tr>
       <th>Kvantor</th>
       <th>Symbol</th>
