@@ -5,7 +5,7 @@
   <Title>Følger og rekker</Title>
   <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="css/regelbokStyle.css">
-  <link type="text/css" rel="stylesheet" href="css/skjermSize.css">
+  <!--<link type="text/css" rel="stylesheet" href="css/skjermSize.css">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -15,8 +15,9 @@
 
 <div class="verticalBar">
   <picture>
+    <!-- margin-left to override hoverefect. -->
     <a href="regelboka.html" style="margin-left: 0px;">
-      <img src="images/regelbokLogo1.png" style="width: 300px;">
+      <img src="images/regelbokLogo1.png" class="logoImage">
     </a>
   </picture>
 
@@ -29,7 +30,7 @@
   </div>
 </div>
 
-<div class="main col-70 col-tab-70 col-ph-70">
+<div class="main col-58 col-tab-48 col-ph-10">
 <h1>Følger og rekker</h1>
 
   <p>
@@ -102,9 +103,9 @@
     n+1 = (b-a) / d + 1</span>
   <p>
   <picture>
-    <img src="images/aritmRekke.png" style="max-width: 60%; float:left;">
+    <img src="images/aritmRekke.png" class="image">
   </picture>
-  <ul style="float: right; margin-right: 20px;">
+  <ul style="clear: both;">
     <li>a: første element</li>
     <li>b: siste element</li>
     <li>n: antall elementer + 1 (husk vi starter på 0)</li>
