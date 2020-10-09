@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <Title>Mengder</Title>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/regelbokStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container"> <!-- Needs to wrap all content in body -->
+
+<div class="verticalBar">
+  <picture>
+    <img src="images/regelbokLogo1.png" style="width: 300px;">
+  </picture>
+
+  <div class="menyStyle">
+    <a href="logikk.html">Logikk</a><br/>
+    <a class="active" href="mengder.html">Mengder</a><br/>
+    <a href="funksjoner.html">Funksjoner</a><br/>
+    <a href="folgerOgRekker.html">Følger og rekker</a><br/>
+    <a href="matriser.html">Matriser</a><br/>
+  </div>
+</div>
+
+<div class="main col-70 col-tab-70 col-ph-70">
+<h1>Mengder</h1>
+
+  <p>
+    <span class="uppercase-red"> Mengde: </span>
+    Uordnet samling av objekter/elementer.
+  </p>
+
+  <p><span class="uppercase-red"> Kjente mengder: </span></p>
+  <table style="margin-top: -10px;">
+    <tr>
+      <th>Mengde</th>
+      <th>Symbol</th>
+      <th>Beskrivelse</th>
+      <th>Inkluderer</th>
+    </tr>
+    <tr>
+      <td>De naturlige tallene</td>
+      <td style="font-size: 2em;">&Nopf;</td>
+      <td>{ 0, 1, 2, ... }</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>De hele tallene</td>
+      <td style="font-size: 2em;">&Zopf;</td>
+      <td>{ ..., -2, -1, 0, 1, 2, ... }</td>
+      <td style="font-size: 2em;">&Nopf;</td>
+    </tr>
+    <tr>
+      <td>De rasjonale tallene</td>
+      <td style="font-size: 2em;">&Qopf;</td>
+      <td>Alle hele tall og brøker der teller og nevner er hele tall</td>
+      <td style="font-size: 2em;">&Zopf;</td>
+    </tr>
+    <tr>
+      <td>De reelle tallene</td>
+      <td style="font-size: 2em;">&Ropf;</td>
+      <td>Alle tall på tallinja</td>
+      <td style="font-size: 2em;">&Qopf;</td>
+    </tr>
+  </table>
+
+  <p><span class="uppercase-red"> Symboler i mengdelære: </span></p>
+  <table style="margin-top: -10px;">
+    <tr>
+      <th>Navn</th>
+      <th>Symbol</th>
+      <th>Matematisk beskrivelse</th>
+      <th>Beskrivelse</th>
+      <th>Venndiagram</th>
+    </tr>
+    <tr>
+      <td>Delmengde</td>
+      <td>&sub;</td>
+      <td>A &sub; B</td>
+      <td>Mengde A ligger<br/>innenfor mengde B</td>
+      <td>
+        <picture>
+          <img src="images/mengdeSub.png" style="max-width: 100px;">
+        </picture>
+      </td>
+    </tr>
+    <tr>
+      <td>Delmengde av eller lik</td>
+      <td>&sube;</td>
+      <td>A &sube; B</td>
+      <td>Mengde A ligger innenfor<br/>mengde B eller er lik B</td>
+      <td>
+        <picture>
+          <img src="images/mengdeTom.png" style="max-width: 100px;">
+        </picture>
+      </td>
+    </tr>
+    <tr>
+      <td>Den tomme mengden</td>
+      <td>&empty;</td>
+      <td>A = { }</td>
+      <td>Mengde A inneholder<br/>ingen elementer </td>
+      <td>
+        <picture>
+          <img src="images/mengdeTom.png" style="max-width: 100px;">
+        </picture>
+      </td>
+    </tr>
+    <tr>
+      <td>Snitt</td>
+      <td>&cap;</td>
+      <td>A &cap; B</td>
+      <td>Mengden av elementene som<br/>A og B har til felles</td>
+      <td>
+        <picture>
+          <img src="images/mengdeSnitt.png" style="max-width: 100px;">
+        </picture>
+      </td>
+      <tr>
+        <td>Union</td>
+        <td>&cup;</td>
+        <td>A &cup; B</td>
+        <td>Mengden av elementene som<br/>er i A eller B, eller i begge</td>
+        <td>
+          <picture>
+            <img src="images/mengdeUnion.png" style="max-width: 100px;">
+          </picture>
+        </td>
+    </tr>
+    <tr>
+      <td>Eksklusiv union</td>
+      <td>&oplus;</td>
+      <td>A &oplus; B</td>
+      <td>Mengden av elementene som<br/>er i A eller B som<br/>ikke
+        overlapper hverandre</td>
+      <td>
+        <picture>
+          <img src="images/mengdeEksUnion.png" style="max-width: 100px;">
+        </picture>
+      </td>
+      <tr>
+        <td>Differanse</td>
+        <td>&minus;</td>
+        <td>A &minus; B</td>
+        <td>Mengden av elementene som<br/>er i A men ikke i B</td>
+        <td>
+          <picture>
+            <img src="images/mengdeDiff.png" style="max-width: 100px;">
+          </picture>
+        </td>
+        <tr>
+          <td>Komplement</td>
+          <td><span style="text-decoration: overline;">A</span></td>
+          <td><span style="text-decoration: overline;">A</span></td>
+          <td>Mengden av elementene som<br/>er i universalmengden U,
+            <br/>men ikke i A</td>
+          <td>
+            <picture>
+              <img src="images/mengdeUniv.png" style="max-width: 100px;">
+            </picture>
+          </td>
+  </table>
+
+  <p>
+    <span class="uppercase-red"> Kartesisk produkt: </span>
+    (a,b): førstekoordinat er fra A og andrekoordinat er fra B.<br/>
+    For eksempel la A = { a<sub>1</sub>, a<sub>2</sub> } og
+    B = { b<sub>1</sub>, b<sub>2</sub> }. Da er A &times; B =
+    { (a<sub>1</sub>,b<sub>1</sub>), (a<sub>1</sub>,b<sub>2</sub>),
+    (a<sub>2</sub>,b<sub>1</sub>), (a<sub>2</sub>,b<sub>2</sub>) }
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Kardinalitet: </span>
+    Størrelsen til en mengde. Antall forskjellige elementer i mengden.
+    Skrives: |A|
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Potensmengde: </span>
+    Potensmengden til A, P(A), er mengden som inneholder alle delmengder
+    av A. Formel: |P(A)| = 2<sup>|A|</sup>
+  </p>
+
+  <p><span class="uppercase-red"> Formler for kardinalitet: </span></p>
+  <ul style="margin-top: -10px;">
+    <li>|A &cup; B| = |A| + |B| - |A &cap; B|</li>
+    <li>|A &cup; B &cup; C| = |A| + |B| + |C| - |A &cap; B|
+      - |A &cap; C| - |B &cap; C| + |A &cap; B &cap; C|</li>
+    <li>|A &minus; B| = |A| - |A &cap; B|</li>
+    <li>|A &oplus; B| = |A &minus; B| + |B &minus; A| = |A| + |B|
+      - 2|A &cap; B|</li>
+  </ul>
+
+  <p><span class="uppercase-red"> De Morgan's lover: </span></p>
+  <ul style="margin-top: -10px;">
+    <li>
+      <span style="text-decoration: overline">A &cup; B</span>
+      = <span style="text-decoration: overline">A</span> &cap;
+      <span style="text-decoration: overline">A</span>
+    </li>
+    <li>
+      <span style="text-decoration: overline">A &cap; B</span>
+      = <span style="text-decoration: overline">A</span> &cup;
+      <span style="text-decoration: overline">A</span>
+    </li>
+  </ul>
+
+  <p><span class="uppercase-red"> Distributive lover: </span></p>
+  <ul style="margin-top: -10px;">
+    <li>A &cap; (B &cup; C) = (A &cap; B) &cup; (A &cap; C)</li>
+    <li>A &cup; (B &cap; C) = (A &cup; B) &cap; (A &cup; C)</li>
+  </ul>
+
+  <p><span class="uppercase-red"> Assosiative lover: </span></p>
+  <ul style="margin-top: -10px;">
+    <li>A &cap; (B &cap; C) = (A &cap; B) &cap; C = A &cap; B &cap; C</li>
+    <li>A &cup; (B &cup; C) = (A &cup; B) &cup; C = A &cup; B &cup; C</li>
+  </ul>
+
+
+</div> <!-- end of main -->
+</div> <!-- end of container -->
+
+</body>
+
+</html>
