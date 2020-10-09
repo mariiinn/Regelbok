@@ -1,0 +1,48 @@
+body {
+  margin-top: 7%;
+  overflow: hidden;
+  background-image: url("../images/bookBackground.jpg");
+  background-size: 100%;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px, 400px);
+  grid-gap: 1vw;
+}
+
+.leftSide {
+  grid-column: 1/2;
+  grid-row: auto;
+  height: auto;
+}
+
+.rightSide {
+  margin-left: 10%;
+  grid-column: 2/8;
+  grid-row: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.1em;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border-color: black;
+  text-align: center;
+  font-family: "times new roman";
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+  padding: 5%;
+  width: 100%;
+}
