@@ -5,19 +5,191 @@
   <Title>Matriser</Title>
   <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="css/regelbokStyle.css">
-  <!--<link type="text/css" rel="stylesheet" href="css/skjermSize.css">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+<!-- Phone version-->
+<div class="container hideOnTab hideOnPc">
+
+<div class="verticalBar">
+  <picture>
+    <!-- margin-left to override hoverefect. -->
+    <a href="regelboka.html" style="margin-left: 0px;">
+      <img src="images/regelbokLogo1.png" class="logoImage"
+      alt="Regelboka. logo">
+    </a>
+  </picture>
+</div>
+
+<div class="main col-ph" style="margin-top: 85px;">
+<h1>Matriser</h1>
+
+  <p>
+    <span class="uppercase-red"> Matrise: </span><br/>
+    Sett av elementer i rader og kolonner.
+    Dimensjonen til en matrise: <br/>RADER &times; KOLONNER.
+  </p>
+  <picture>
+    <img src="images/matrixDim.png" class="image" alt="Hoveddiagonalen
+    går fra nederste venstre hjørne til øverste høyre hjørne. Bidiagonalen
+    går fra øveste venstre hjørne til nederste høyre hjørne.">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Matriseaddisjon: </span>
+    VIKTIG: Matrisene som legges sammen
+    <span style="text-decoration: underline;">må</span> ha samme
+    dimensjon!
+  </p>
+  <picture>
+    <img src="images/matrixAdd.png" class="image" alt="Eksempel på
+    matriseaddisjon">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Matrisesubtraksjon: </span>
+    VIKTIG: Matrisene som legges sammen
+    <span style="text-decoration: underline;">må</span> ha samme
+    dimensjon!
+  </p>
+  <picture>
+    <img src="images/matrixSub.png" class="image" alt="Eksempel på
+    matrisesubtraksjon">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Matrise- multiplikasjon: </span>
+    VIKTIG: AB finnes kun om antall kolonner i A er lik antall rader i B.
+    <br/>Hvis A har dimensjon m &times; n og B har n &times; k, så har AB
+    dimensjon m &times; k.
+  </p>
+  <picture>
+    <img src="images/matrixMult.png" class="image" alt="Eksempel på
+    matrisemultiplikasjon">
+  </picture>
+
+  <p>
+    Derfor er AB = BA bare hvis A og B er kvadratiske matriser (har
+    dimensjon<br/> m &times; m).<br/>
+    For kvadratiske matriser gjelder:
+  </p>
+  <picture>
+    <img src="images/matrixKvad.png" class="image" alt="A gange A = A^2,
+    A^1 = A og A^0 = I">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Identitetsmatrisen: </span>
+    Også kalt enhetsmatrisen. Er en kvadratisk matrise og er kommutativ
+    fordi AI = A = IA.
+  </p>
+  <picture>
+    <img src="images/matrixId.png" class="image" alt="I = kvadratisk matrise
+    med 1-ere på hoveddiagonalen">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Transponert matrise: </span><br/>
+    Den matrisen vi får ved å bytte om rader og kolonner.<br/>
+    Legg merke til at hvis AB eksisterer, så blir (AB)<sup>T</sup>
+    = B<sup>T</sup>A<sup>T</sup>.
+  </p>
+  <picture>
+    <img src="images/matrixTrans.png" class="image" alt="Eksempel på
+    transponert matrise">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Symmetri: </span><br/>
+    En kvadratisk matrise er symmetrisk hvis A = A<sup>T</sup>.
+    <br/>Dvs. symmetrisk over hoveddiagonalen.
+  </p>
+  <picture>
+    <img src="images/matrixSym.png" class="image" alt="Eksempel på
+    symmetrisk matrise">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Logiske matriser: </span><br/>
+    En matrise der elementene er 0'ere eller 1'ere. 0 står for usann og
+    1 for sann.
+  </p>
+  <picture>
+    <img src="images/matrixAogBogC.png" class="image" alt="Viser hva matrise
+    A, B og C er for eksemplene under">
+  </picture>
+  <ul style="margin-top: 10px;">
+    <li>
+      Logisk eller (&or;):<br/>
+      Merk at<br/>
+      1 &or; 1 = 1<br/>
+      1 &or; 0 = 0 &or; 1 = 1<br/>
+      0 &or; 0 = 0<br/>
+      A &and; B eksisterer<br/>dersom A og B<br/>har samme dimensjon.<br/>
+      Utførelse:
+    </li>
+  </ul>
+  <picture>
+    <img src="images/matrixLogEller.png" class="image" alt="Eksempel på
+    logisk eller">
+  </picture>
+  <ul>
+    <li>
+      Logisk og (&and;):<br/>
+      Merk at<br/>
+      1 &and; 1 = 1<br/>
+      1 &and; 0 = 0 &and; 1 = 0<br/>
+      0 &and; 0 = 0<br/>
+      A &and; B eksisterer<br/>dersom A og B<br/>har samme dimensjon.<br/>
+      Utførelse:
+    </li>
+  </ul>
+  <picture>
+    <img src="images/matrixLogOg.png" class="image" alt="Eksempel på
+    logisk og">
+  </picture>
+  <ul>
+    <li>
+      Logisk multiplikasjon (&odot;):<br/>
+      Merk at<br/>
+      A &odot; C eksisterer<br/>dersom A har<br/>like mange kolonner
+      <br/>som C har rader.<br/>
+      A &odot; C &ne; C &odot; A
+    </li>
+  </ul>
+  <picture>
+    <img src="images/matrixLogMult.png" class="image" alt="Eksempel på
+    logisk multiplikasjon">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Inverse matriser: </span><br/>
+    En kvadratisk matrise A er inverterbar hvis det finnes en matrise
+    A<sup>-1</sup> slik at <br/>AA<sup>-1</sup> = A<sup>-1</sup>A = I.<br/>
+    Hvis A er inverterbar må<br/> ad - bc &ne; 0. ad - bc kalles for matrisens
+    determinant.
+  </p>
+  <picture>
+    <img src="images/matrixInv.png" class="image" alt="Eksempel på
+    invers matrise">
+  </picture>
+
+
+</div> <!-- end of main -->
+</div> <!-- end of container phone version -->
+
+
+<!-- Tablet and pc version -->
 <div class="container"> <!-- Needs to wrap all content in body -->
 
 <div class="verticalBar">
   <picture>
     <!-- margin-left to override hoverefect. -->
     <a href="regelboka.html" style="margin-left: 0px;">
-      <img src="images/regelbokLogo1.png" class="logoImage">
+      <img src="images/regelbokLogo1.png" class="logoImage"
+      alt="Regelboka. logo">
     </a>
   </picture>
 
@@ -30,7 +202,7 @@
   </div>
 </div>
 
-<div class="main col-58 col-tab-48 col-ph-10">
+<div class="main col-pc col-tab">
 <h1>Matriser</h1>
 
   <p>
@@ -39,7 +211,9 @@
     Dimensjonen til en matrise: RADER &times; KOLONNER.
   </p>
   <picture>
-    <img src="images/matrixDim.png" class="image">
+    <img src="images/matrixDim.png" class="image" alt="Hoveddiagonalen
+    går fra nederste venstre hjørne til øverste høyre hjørne. Bidiagonalen
+    går fra øveste venstre hjørne til nederste høyre hjørne.">
   </picture>
 
   <p>
@@ -49,7 +223,8 @@
     dimensjon!
   </p>
   <picture>
-    <img src="images/matrixAdd.png" class="image">
+    <img src="images/matrixAdd.png" class="image" alt="Eksempel på
+    matriseaddisjon">
   </picture>
 
   <p>
@@ -59,7 +234,8 @@
     dimensjon!
   </p>
   <picture>
-    <img src="images/matrixSub.png" class="image">
+    <img src="images/matrixSub.png" class="image" alt="Eksempel på
+    matrisesubtraksjon">
   </picture>
 
   <p>
@@ -69,7 +245,8 @@
     dimensjon m &times; k.
   </p>
   <picture>
-    <img src="images/matrixMult.png" class="image">
+    <img src="images/matrixMult.png" class="image" alt="Eksempel på
+    matrisemultiplikasjon">
   </picture>
 
   <p>
@@ -78,7 +255,8 @@
     For kvadratiske matriser gjelder:
   </p>
   <picture>
-    <img src="images/matrixKvad.png" class="image">
+    <img src="images/matrixKvad.png" class="image" alt="A gange A = A^2,
+    A^1 = A og A^0 = I">
   </picture>
 
   <p>
@@ -87,7 +265,8 @@
     fordi AI = A = IA.
   </p>
   <picture>
-    <img src="images/matrixId.png" class="image">
+    <img src="images/matrixId.png" class="image" alt="I = kvadratisk matrise
+    med 1-ere på hoveddiagonalen">
   </picture>
 
   <p>
@@ -97,7 +276,8 @@
     = B<sup>T</sup>A<sup>T</sup>.
   </p>
   <picture>
-    <img src="images/matrixTrans.png" class="image">
+    <img src="images/matrixTrans.png" class="image" alt="Eksempel på
+    transponert matrise">
   </picture>
 
   <p>
@@ -106,7 +286,8 @@
     Dvs. symmetrisk over hoveddiagonalen.
   </p>
   <picture>
-    <img src="images/matrixSym.png" class="image">
+    <img src="images/matrixSym.png" class="image" alt="Eksempel på
+    symmetrisk matrise">
   </picture>
 
   <p>
@@ -115,7 +296,8 @@
     1 for sann.
   </p>
   <picture>
-    <img src="images/matrixAogBogC.png" class="image">
+    <img src="images/matrixAogBogC.png" class="image" alt="Viser hva matrise
+    A, B og C er for eksemplene under">
   </picture>
   <table class="tableScaling1">
     <tr>
@@ -129,7 +311,8 @@
       <td>&or;</td>
       <td>
         <picture>
-          <img src="images/matrixLogEller.png" style="max-width: 100%;">
+          <img src="images/matrixLogEller.png" style="max-width: 100%;"
+          alt="Eksempel på logisk eller">
         </picture>
       </td>
       <td>
@@ -144,7 +327,8 @@
       <td>&and;</td>
       <td>
         <picture>
-          <img src="images/matrixLogOg.png" style="max-width: 100%;">
+          <img src="images/matrixLogOg.png" style="max-width: 100%;"
+          alt="Eksempel på logisk eller">
         </picture>
       </td>
       <td>
@@ -159,7 +343,8 @@
       <td>&odot;</td>
       <td>
         <picture>
-          <img src="images/matrixLogMult.png" style="max-width: 100%;">
+          <img src="images/matrixLogMult.png" style="max-width: 100%;"
+          alt="Eksempel på logisk eller">
         </picture>
       </td>
       <td>
@@ -178,13 +363,14 @@
     determinant.
   </p>
   <picture>
-    <img src="images/matrixInv.png" class="image">
+    <img src="images/matrixInv.png" class="image" alt="Eksempel på
+    invers matrise">
   </picture>
 
 
 
 </div> <!-- end of main -->
-</div> <!-- end of container -->
+</div> <!-- end of container tab and pc version -->
 
 </body>
 
