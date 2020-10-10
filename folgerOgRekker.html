@@ -5,19 +5,119 @@
   <Title>Følger og rekker</Title>
   <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="css/regelbokStyle.css">
-  <!--<link type="text/css" rel="stylesheet" href="css/skjermSize.css">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+<!-- Phone version-->
+<div class="container hideOnTab hideOnPc">
+
+<div class="verticalBar">
+  <picture>
+    <!-- margin-left to override hoverefect. -->
+    <a href="regelboka.html" style="margin-left: 0px;">
+      <img src="images/regelbokLogo1.png" class="logoImage"
+      alt="Regelboka. logo">
+    </a>
+  </picture>
+</div>
+
+<div class="main col-ph" style="margin-top: 85px">
+<h1>Følger og rekker</h1>
+
+  <p>
+    <span class="uppercase-red"> Følge: </span><br/>
+    En oppramsing av tall, i en bestemt rekkefølge:<br/>a<sub>0</sub>,
+    a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>, ..., a<sub>N</sub>
+    = { a<sub>n</sub> }<br/>for n &ge; 0.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Ledd: </span><br/>
+    Element i følgen. Antall ledd i følgen over er N+1 fordi vi starter
+    på 0.
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Geometrisk tallfølge: </span><br/>
+    Forholdet mellom et ledd og det neste er konstant.<br/>
+    a<sub>n</sub> / a<sub>n-1</sub> = r
+    <span style="padding-left: 15px; padding-right: 15px;">&rArr;</span>
+    a<sub>n</sub> = a<sub>n-1</sub> r<br/>for n &ge; 1<br/>
+    Generell formel:<br/>
+    a<sub>n</sub> = <span style="padding-left: 0px; padding-right: 15px;">
+    a<sub>0</sub>r<sup>n</sup></span>n &ge; 0
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Aritmetisk tallfølge: </span><br/>
+    Differansen mellom et ledd og det neste er konstant.<br/>
+    a<sub>n</sub> - a<sub>n-1</sub> = d
+    <span style="padding-left: 15px; padding-right: 15px;">n &ge; 1</span><br/>
+    Generell formel:<br/>
+    <span style="padding-left: 0px; padding-right: 20px;">
+      a<sub>n</sub> = a<sub>0</sub> + dn
+    </span> n &ge; 0
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Rekke: </span><br/>
+    Summering av tall:<br/>a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub>
+    + ... + a<sub>n</sub>
+  </p>
+
+  <p>
+    <span class="uppercase-red"> Geometrisk rekke: </span><br/>
+    a + ar + ar<sup>2</sup> + ... + ar<sup>n</sup> =<br/>
+    &sum;<sub>i=0</sub><sup>n</sup> ar<sup>i</sup><br/>
+  <p>
+  <ul style="margin-top: -10px;">
+    <li>
+      r &ne; 1:<br/> <span style="padding-left: 0px; padding-right: 20px;">
+      &sum;<sub>i=0</sub><sup>N</sup> ar<sup>i</sup>
+      = <br/>a(r<sup>n+1</sup> - 1) / (r - 1)</span>
+    </li>
+    <li>
+      r = 1:<br/> <span style="padding-left: 0px; padding-right: 20px;">
+      &sum;<sub>i=0</sub><sup>N</sup> ar<sup>i</sup>
+      = a(n + 1)</span>
+    </li>
+  </ul>
+
+  <p>
+    <span class="uppercase-red"> Aritmetisk rekke: </span><br/>
+    a + (a+d) + ... + (a+nd) =
+    &sum;<sub>i=0</sub><sup>n</sup> a + id = (n+1)(a+b) / 2
+    <span style="padding-left: 0px; padding-right: 15px;">
+    der</span> <span style="padding-left: 15px; padding-right: 15px;">
+    n+1 = (b-a) / d + 1</span>
+  <p>
+  <picture>
+    <img src="images/aritmRekke.png" class="image" alt="Tallinje som
+    viser at d er differansen mellom leddene og n+1 er differansen mellom
+    a og b">
+  </picture>
+  <ul style="margin-top: -10px;">
+    <li>a: første element</li>
+    <li>b: siste element</li>
+    <li>n: antall elementer + 1 (husk vi starter på 0)</li>
+    <li>d: differansen</li>
+  </ul>
+
+</div> <!-- end of main -->
+</div> <!-- end of container phone version -->
+
+
+<!-- Tablet and pc version -->
 <div class="container"> <!-- Needs to wrap all content in body -->
 
 <div class="verticalBar">
   <picture>
     <!-- margin-left to override hoverefect. -->
     <a href="regelboka.html" style="margin-left: 0px;">
-      <img src="images/regelbokLogo1.png" class="logoImage">
+      <img src="images/regelbokLogo1.png" class="logoImage"
+      alt="Regelboka. logo">
     </a>
   </picture>
 
@@ -30,7 +130,7 @@
   </div>
 </div>
 
-<div class="main col-58 col-tab-48 col-ph-10">
+<div class="main col-pc col-tab">
 <h1>Følger og rekker</h1>
 
   <p>
@@ -103,7 +203,9 @@
     n+1 = (b-a) / d + 1</span>
   <p>
   <picture>
-    <img src="images/aritmRekke.png" class="image">
+    <img src="images/aritmRekke.png" class="image" alt="Tallinje som
+    viser at d er differansen mellom leddene og n+1 er differansen mellom
+    a og b">
   </picture>
   <ul style="clear: both;">
     <li>a: første element</li>
@@ -114,7 +216,7 @@
 
 
 </div> <!-- end of main -->
-</div> <!-- end of container -->
+</div> <!-- end of container tab and pc version -->
 
 </body>
 
