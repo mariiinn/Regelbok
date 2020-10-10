@@ -5,19 +5,96 @@
   <Title>Funksjoner</Title>
   <meta charset="utf-8">
   <link type="text/css" rel="stylesheet" href="css/regelbokStyle.css">
-  <!--<link type="text/css" rel="stylesheet" href="css/skjermSize.css">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+<!-- Phone version-->
+<div class="container hideOnTab hideOnPc">
+
+<div class="verticalBar">
+  <picture>
+    <!-- margin-left to override hoverefect. -->
+    <a href="regelboka.html" style="margin-left: 0px;">
+      <img src="images/regelbokLogo1.png" class="logoImage"
+      alt="Regelboka. logo">
+    </a>
+  </picture>
+</div>
+
+<div class="main col-ph" style="margin-top: 85px;">
+<h1>Funksjoner</h1>
+
+  <p>
+    <span class="uppercase-red"> Funksjon: </span><br/>
+    Notasjonen f: A &rarr; B kan leses "f er funksjonen fra A til B" eller
+    "f er en tilordning fra A til B".<br/>A tilordnes kun ett og bare ett element
+    i B.
+  </p>
+  <ul style="margin-top: -10px;">
+    <li>A = definisjons- mengden</li>
+    <li>B = verdiområdet</li>
+    <li>V<sub>f</sub> = mengden av alle funksjonsverdiene</li>
+  </ul>
+  <picture>
+    <img src="images/funksjon.png" class="image" alt="Mengdene A med pil til
+    mengde B. Funksjonen f tar element fra A og blir til et element i B.">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Funksjoners egenskaper: </span><br/>
+    Dersom punktene under er oppfylt, kan vi kalle f for en funksjon.
+  </p>
+  <ul style="margin-top: -10px;">
+    <li>
+      <span style="text-decoration: underline;">En til en</span> dersom
+      <br/>f(a) &ne; f(b) når a &ne; b. Dvs. ingen elementer i B treffes av
+      to eller flere piler.
+    </li>
+    <li>
+      <span style="text-decoration: underline;">På</span> dersom
+      V<sub>f</sub> = B. Dvs. alle elementer i B treffes av en pil.
+    </li>
+  </ul>
+
+  <p>
+    <span class="uppercase-red"> Sammensetning av to funksjoner: </span><br/>
+    La h: A &rarr; C. Da er h(a) = f &#x25CB; g(a) = f(g(a)) = c.
+  </p>
+  <picture>
+    <img src="images/toFunksjoner.png" class="image" alt="Pil fra A til B
+    og pil fra B til C. Funksjonen g tar element fra A og blir til et
+    element i B. Funksjonen g tar element fra B og blir til et
+    element i C.">
+  </picture>
+
+  <p>
+    <span class="uppercase-red"> Invers funksjon: </span><br/>
+    En funksjon som både er "en til en" og "på" har en invers funksjon.
+    <br/>Hvis f: A &rarr; B, så er<br/>f<sup> -1</sup>: B &rarr; A. Og
+    f<sup> -1</sup>(f(a)) = a
+  </p>
+  <picture>
+    <img src="images/inversFunksjon.png" class="image" alt="Funksjon f
+    illustreres med en pil fra A til B, og den inverse f^1 illustreres med
+    en pil andre veien.">
+  </picture>
+
+
+</div> <!-- end of main -->
+</div> <!-- end of container phone version -->
+
+
+<!-- Tablet and pc version -->
 <div class="container"> <!-- Needs to wrap all content in body -->
 
 <div class="verticalBar">
   <picture>
     <!-- margin-left to override hoverefect. -->
     <a href="regelboka.html" style="margin-left: 0px;">
-      <img src="images/regelbokLogo1.png" class="logoImage">
+      <img src="images/regelbokLogo1.png" class="logoImage"
+      alt="Regelboka. logo">
     </a>
   </picture>
 
@@ -30,7 +107,7 @@
   </div>
 </div>
 
-<div class="main col-58 col-tab-48 col-ph-10">
+<div class="main col-pc col-tab">
 <h1>Funksjoner</h1>
 
   <p>
@@ -45,7 +122,8 @@
     <li>V<sub>f</sub> = mengden av alle funksjonsverdiene</li>
   </ul>
   <picture>
-    <img src="images/funksjon.png" class="image">
+    <img src="images/funksjon.png" class="image" alt="Mengdene A med pil til
+    mengde B. Funksjonen f tar element fra A og blir til et element i B.">
   </picture>
 
   <p>
@@ -69,7 +147,10 @@
     La h: A &rarr; C. Da er h(a) = f &#x25CB; g(a) = f(g(a)) = c.
   </p>
   <picture>
-    <img src="images/toFunksjoner.png" class="image">
+    <img src="images/toFunksjoner.png" class="image" alt="Pil fra A til B
+    og pil fra B til C. Funksjonen g tar element fra A og blir til et
+    element i B. Funksjonen g tar element fra B og blir til et
+    element i C.">
   </picture>
 
   <p>
@@ -79,12 +160,14 @@
     f<sup> -1</sup>(f(a)) = a
   </p>
   <picture>
-    <img src="images/inversFunksjon.png" class="image">
+    <img src="images/inversFunksjon.png" class="image" alt="Funksjon f
+    illustreres med en pil fra A til B, og den inverse f^1 illustreres med
+    en pil andre veien.">
   </picture>
 
 
 </div> <!-- end of main -->
-</div> <!-- end of container -->
+</div> <!-- end of container tab and pc version -->
 
 </body>
 
