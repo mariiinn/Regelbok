@@ -37,7 +37,7 @@ a:hover {
 .rightSide {
   grid-column: 2/5;
   grid-row: auto;
-  margin-left: -2%;
+  margin-left: -3%;
 }
 
 button {
