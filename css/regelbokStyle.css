@@ -82,7 +82,7 @@ h1 {
 }
 
 .main {
-  margin-top: 70px;
+  margin-top: 140px;
   grid-column: 1/2;
   grid-row: auto;
   /* Space around text in main */
