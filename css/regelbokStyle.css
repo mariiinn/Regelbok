@@ -59,8 +59,8 @@ h1 {
   font-size: 2em; /* Heading size on phone */
 }
 
-.col-ph {width: 190px;} /* Box scaling */
-.logoImage {width: 200px;} /*Logo image size for phone and tablet */
+.col-ph {width: 320px;} /* Box scaling */
+.logoImage {width: 330px;} /*Logo image size for phone and tablet */
 .image {width: 100%;} /* Image scaling */
 
 /*Flex boxes*/
