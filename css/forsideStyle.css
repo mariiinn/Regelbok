@@ -4,7 +4,7 @@ body {
   margin-top: 7%;
   overflow-x: hidden; /* No horizontal scrolling */
   background-image: url("../images/bookBackground.jpg");
-  background-size: 100%;
+  height: 100%;
 }
 
 /* links */
@@ -71,6 +71,9 @@ button {
 
 /* pc */
 @media only screen and (min-width: 1000px) {
+  body {
+      background-size: 100%;
+  }
   .col-pc {width: 58%;}
   .imageScale { width: 100%;}
 }
