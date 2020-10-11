@@ -75,7 +75,7 @@ h1 {
 .verticalBar {
   grid-column: 1/2; /*Starts at 1 and stops when it reaches the second column*/
   grid-row: auto; /*Goes on as long as it needs*/
-  width: 200px; /* Same as the logo image */
+  width: 330px; /* Same as the logo image */
   height: auto;
   background-color: white;
   position: fixed; /*Move with the screen*/
