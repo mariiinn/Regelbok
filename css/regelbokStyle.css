@@ -60,7 +60,7 @@ h1 {
 }
 
 .col-ph {width: 320px;} /* Box scaling */
-.logoImage {width: 330px;} /*Logo image size for phone and tablet */
+.logoImage {width: 330px;} /*Logo image size for phone */
 .image {width: 100%;} /* Image scaling */
 
 /*Flex boxes*/
@@ -104,6 +104,7 @@ h1 {
   }
 
   .col-tab {width: 48%;}
+  .logoImage {width: 200px;} /*Logo image size for tablet */
 
   .container {
     display: grid;
