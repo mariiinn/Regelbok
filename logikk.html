@@ -33,7 +33,7 @@
   </p>
 
   <p>
-    <span class="uppercase-red"> Utsagnfunksjon: </span>
+    <span class="uppercase-red"> Utsagnfunksjon: </span><br/>
     F.eks. P(x): "x + 1 = 2". Her er
     <span style="text-decoration: underline;">definisjonsmengden</span>
     de hele tallene.
@@ -45,18 +45,18 @@
   </p>
 
   <p>
-    <span class="uppercase-red"> Kontradiksjon: </span>
+    <span class="uppercase-red"> Kontradiksjon: </span><br/>
     Selvmotsigelse. Et utsagn som alltid er usant.
   </p>
 
   <p><span class="uppercase-red"> Logiske operatorer: </span></p>
   <ul style="margin-top: -10px;">
-    <li>Negasjon (&not;) leses "ikke" og har javakode !</li>
-    <li>Konjunksjon (&and;) leses "og" og har javakode &&</li>
-    <li>Disjunksjon (&or;) leses "eller" og har javakode ||</li>
-    <li>Xor (&oplus;) leses "enten eller" og har javakode ^</li>
-    <li>Implikasjon (&rarr;) leses "impliserer".</li>
-    <li>Biimplikasjon (&harr;) leses "hvis og bare hvis"</li>
+    <li>Negasjon (&not;)<br/>leses "ikke" og har javakode !</li>
+    <li>Konjunksjon (&and;)<br/> leses "og" og har javakode &&</li>
+    <li>Disjunksjon (&or;)<br/> leses "eller" og har javakode ||</li>
+    <li>Xor (&oplus;)<br/> leses "enten eller" og har javakode ^</li>
+    <li>Implikasjon (&rarr;)<br/> leses "impliserer".</li>
+    <li>Biimplikasjon (&harr;)<br/> leses "hvis og bare hvis"</li>
   </ul>
 
   <p>Måter å lese p &rarr; q:</p>
@@ -84,7 +84,7 @@
     <li>"p hvis og bare hvis q"</li>
   </ul>
 
-  <p><span class="uppercase-red"> Sannhetsverdi- tabeller: </span></p>
+  <p><span class="uppercase-red"> Sannhetsverditabeller: </span></p>
   <table style="margin-top: -10px;" class="spaceOverTable">
     <tr>
       <th>p</th>
@@ -106,26 +106,31 @@
       <th>q</th>
       <th>p&and;q</th>
       <th>p&or;q</th>
+      <th>p&oplus;q</th>
     </tr>
     <tr>
       <td>S</td>
       <td>S</td>
       <td>S</td>
       <td>S</td>
+      <td>U</td>
     </tr>
     <tr>
       <td>S</td>
       <td>U</td>
       <td>U</td>
       <td>S</td>
+      <td>S</td>
     </tr>
     <tr>
       <td>U</td>
       <td>S</td>
       <td>U</td>
       <td>S</td>
+      <td>S</td>
     </tr>
     <tr>
+      <td>U</td>
       <td>U</td>
       <td>U</td>
       <td>U</td>
@@ -134,34 +139,6 @@
   </table>
 
   <table class="spaceOverTable">
-    <tr>
-      <th>p</th>
-      <th>q</th>
-      <th>p&oplus;q</th>
-    </tr>
-    <tr>
-      <td>S</td>
-      <td>S</td>
-      <td>U</td>
-    </tr>
-    <tr>
-      <td>S</td>
-      <td>U</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <td>U</td>
-      <td>S</td>
-      <td>S</td>
-    </tr>
-    <tr>
-      <td>U</td>
-      <td>U</td>
-      <td>U</td>
-    </tr>
-  </table>
-
-  <table class="spaceOverTable" style="font-size: 0.9em;">
     <tr>
       <th>p</th>
       <th>q</th>
@@ -212,7 +189,7 @@
   </p>
 
   <p>
-    <span class="uppercase-red"> Kommutative operatorer: </span>
+    <span class="uppercase-red"> Kommutative operatorer: </span><br/>
     Rekkefølgen på utsagnene er likegyldig.<br/>(f.eks. p&or;q = q&or;p).
   </p>
 
@@ -248,12 +225,12 @@
   <p><span class="uppercase-red"> Kvantorer: </span></p>
   <ul style="margin-top: -10px;">
     <li>
-      Allkvantor (&forall;)</br>skrives &forall;x P(x)<br/>som kan leses
+      Allkvantor (&forall;)</br>skrives &forall;x P(x) som kan leses
       som<br/>"for alle x gjelder P(x)"
     </li>
     <li>
-      Eksistenskvantor (&exist;)</br>skrives &exist;x P(x)<br/>som kan
-      leses som<br/>"det finnes (minst en)/eksisterer en x slik at P(x)"
+      Eksistenskvantor (&exist;)</br>skrives &exist;x P(x) som kan
+      leses som<br/>"det finnes (minst en)/eksisterer en x<br/>slik at P(x)"
     </li>
   </ul>
 
