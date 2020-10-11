@@ -17,8 +17,8 @@ a:hover {
 }
 
 /* phones */
-.col-ph {width: 190px;}
-.imageScale {width: 200px;}
+.col-ph {width: 320px;}
+.imageScale {width: 330px;}
 
 .container {
   display: grid;
@@ -37,6 +37,7 @@ a:hover {
 .rightSide {
   grid-column: 2/5;
   grid-row: auto;
+  margin-left: -2%;
 }
 
 button {
