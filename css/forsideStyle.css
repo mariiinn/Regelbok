@@ -16,36 +16,29 @@ a:hover {
 }
 
 /* phones */
-/*.col-ph {width: 320px;}
-.imageScale {width: 330px;}*/
 .col-ph {width: auto;}
 .imageScale {width: 100%;}
 
 .container {
-  /*display: grid;*/
+  /* 2 kolonner. Andre kolonne skal være 3 ganger så stor som første kolonne.*/
   display: grid;
-  /*grid-template-columns: auto;
-  grid-auto-rows: minmax(100px, auto);
-  grid-auto-columns: minmax(100px, 400px);
-  grid-gap: 1vw;*/
-  /*grid-template-columns: 50% 15% 40%;*/
-  grid-template-columns: [col-1-start] 1fr [col-2-start] 3fr [col-2-end];
-  /*grid-template-columns: [col-1-start] 1.2fr [col-2-start] 1fr [col-2-end];
-  grid-gap: 10%;*/
+  grid-template-columns: [col-1-start] 0.3fr [col-2-start] 1fr [col-3-start]
+    3fr [col-4-start] 0.3fr [col-4-end];
 }
 
 .leftSide {
-  grid-column: col-1-start/col-2-end;
+  /* Logoen skal dekke alle kolonnene i første rad */
+  grid-column: col-2-start/col-4-start;
   grid-row: auto;
   height: auto;
 }
 
 .chapterBox {
-  grid-column: col-1-start/col-2-start;
+  grid-column: col-2-start/col-3-start;
 }
 
 .rightSide {
-  grid-column: col-2-start/col-2-end;
+  grid-column: col-3-start/col-4-start;
   grid-row: auto;
 }
 
