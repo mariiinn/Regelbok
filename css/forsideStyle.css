@@ -16,8 +16,10 @@ a:hover {
 }
 
 /* phones */
-.col-ph {width: 320px;}
-.imageScale {width: 330px;}
+/*.col-ph {width: 320px;}
+.imageScale {width: 330px;}*/
+.col-ph {width: auto;}
+.imageScale {width: 100%;}
 
 .container {
   /*display: grid;*/
@@ -27,8 +29,8 @@ a:hover {
   grid-auto-columns: minmax(100px, 400px);
   grid-gap: 1vw;*/
   /*grid-template-columns: 50% 15% 40%;*/
-  grid-template-columns: [col-1-start] 1.5fr [col-2-start] 0.5fr [col-3-start]
-    1fr [col-4-start] 0.2fr [col-4-end];
+  grid-template-columns: [col-1-start] 1fr [col-2-start] 0fr [col-3-start]
+    0fr [col-4-start] 0fr [col-4-end];
   /*grid-template-columns: [col-1-start] 1.2fr [col-2-start] 1fr [col-2-end];
   grid-gap: 10%;*/
 }
@@ -67,6 +69,28 @@ button {
 @media only screen and (min-width: 600px) {
   .col-tab {width: auto;}
   .imageScale { width: 80%;}
+
+  .container {
+    display: grid;
+    grid-template-columns: [col-1-start] 1.5fr [col-2-start] 0.5fr [col-3-start]
+      1fr [col-4-start] 0.2fr [col-4-end];
+  }
+
+  .leftSide {
+    grid-column: col-1-start/col-2-start;
+    grid-row: auto;
+    height: auto;
+  }
+
+  .chapterBox {
+    grid-column: col-2-start/col-3-start;
+    margin-left: 20%;
+  }
+
+  .rightSide {
+    grid-column: col-3-start/col-4-start;
+    grid-row: auto;
+  }
 
   button {
     font-size: 1.7em; /* Bigger font on tablet */
