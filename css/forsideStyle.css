@@ -15,29 +15,33 @@ a:hover {
   font-size: 1.1em; /* Makes the text bigger when the mouse hover */
 }
 
-/* phones */
-.col-ph {width: auto;}
 .imageScale {width: 100%;}
 
+/* phones */
+.col-ph {width: auto;}
+
 .container {
-  /* 2 kolonner. Andre kolonne skal være 3 ganger så stor som første kolonne.*/
+  /* 4 columns. First and last column will be empty. The third one is 3
+  times bigger than the second column. */
   display: grid;
   grid-template-columns: [col-1-start] 0.3fr [col-2-start] 1fr [col-3-start]
     3fr [col-4-start] 0.3fr [col-4-end];
 }
 
 .leftSide {
-  /* Logoen skal dekke alle kolonnene i første rad */
+  /* The logo covers row 1, column 2 and 3. */
   grid-column: col-2-start/col-4-start;
   grid-row: auto;
   height: auto;
 }
 
 .chapterBox {
+  /* Row 2, column 2 */
   grid-column: col-2-start/col-3-start;
 }
 
 .rightSide {
+  /* Row 2, column 3 */
   grid-column: col-3-start/col-4-start;
   grid-row: auto;
 }
@@ -59,27 +63,31 @@ button {
 /* tablets */
 @media only screen and (min-width: 600px) {
   .col-tab {width: auto;}
-  .imageScale { width: 80%;}
 
   .container {
+    /*  */
+    /* 4 columns. First and last column will be empty. The third one is 3
+    times bigger than the second column. */
     display: grid;
-    grid-template-columns: [col-1-start] 1.5fr [col-2-start] 0.5fr [col-3-start]
-      1fr [col-4-start] 0.2fr [col-4-end];
+    grid-template-columns: [col-1-start] 1.5fr [col-2-start] 0.2fr [col-3-start]
+      0.5fr [col-4-start] 1fr [col-5-start] 0.2fr [col-5-end];
   }
 
   .leftSide {
+    /* Column 1 */
     grid-column: col-1-start/col-2-start;
     grid-row: auto;
     height: auto;
   }
 
   .chapterBox {
-    grid-column: col-2-start/col-3-start;
-    margin-left: 20%;
+    /* Column 3 */
+    grid-column: col-3-start/col-4-start;
   }
 
   .rightSide {
-    grid-column: col-3-start/col-4-start;
+    /* Column 4 */
+    grid-column: col-4-start/col-5-start;
     grid-row: auto;
   }
 
@@ -93,9 +101,8 @@ button {
   body {
       background-size: 100%;
   }
-  /*.col-pc {width: 58%;}*/
+
   .col-pc {width: auto;}
-  .imageScale { width: 100%;}
 
   button {
     font-size: 2em;
