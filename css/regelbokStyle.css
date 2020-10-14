@@ -80,7 +80,7 @@ h1 {
 
 .main {
   background-color: white;
-  padding-top: 170px;
+  padding-top: 37%;
   grid-column: col-2-start/col-3-start;
   grid-row: auto;
   /* Space around text in main */
