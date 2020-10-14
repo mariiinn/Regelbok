@@ -72,11 +72,8 @@ h1 {
 }
 
 .verticalBar {
-  /*grid-column: col-2-start/col-3-start;
-  grid-row: auto;*/ /*Goes on as long as it needs*/
-  /*width: 340px;*/ /* Same as the logo image */
-  margin-left: 8.1%;
-  width: 79.9%;
+  margin-left: 8%;
+  width: 80%;
   height: auto;
   background-color: white;
   position: fixed; /*Move with the screen*/
@@ -84,7 +81,7 @@ h1 {
 
 .main {
   background-color: white;
-  margin-top: 140px;
+  padding-top: 170px;
   grid-column: col-2-start/col-3-start;
   grid-row: auto;
   /* Space around text in main */
@@ -111,11 +108,12 @@ h1 {
 
   .container {
     display: grid;
-    grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start]
-      3fr [col-4-start] 1fr [col-4-end];
+    grid-template-columns: [col-1-start] 200px [col-2-start] 1fr [col-3-start]
+      5fr [col-4-start] 0.8fr [col-4-end];
   }
 
   .verticalBar {
+    margin-left: 0%; /* Change back */
     grid-column: col-1-start/col-2-start;
     grid-row: auto; /*Goes on as long as it needs*/
     width: 200px; /* Same as the logo image */
@@ -125,17 +123,24 @@ h1 {
     /* New */
     padding-bottom: 5px; /* Extra padding under the links */
   }
+/*
+  .verticalBar {
+    margin-left: 8%;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    position: fixed;*/ /*Move with the screen*/
+/*  }
+*/
 
   .main {
-    /*margin-left: 200px;*/ /* Want the main box on the right side of the menu */
     grid-column: col-3-start/col-4-start;
     grid-row: auto;
+    padding-top: 0px; /* Change back */
     /* More padding */
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
-    /* New */
-    margin-top: 0px;
   }
 
   /* Used in the fixed vertical menu that only tablet and pc have */
