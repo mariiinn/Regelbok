@@ -59,7 +59,6 @@ h1 {
   font-size: 2em; /* Heading size on phone */
 }
 
-/*.col-ph {width: 320px;}*/ /* Box scaling */
 .col-ph {width: auto;}
 .logoImage {width: 100%;} /*Logo image size for phone */
 .image {width: 100%;} /* Image scaling */
@@ -99,17 +98,16 @@ h1 {
   }
 
   h1 {
-    font-size: 4em; /* Heading size on tablet */
+    font-size: 3em; /* Heading size on tablet */
   }
 
-  /*.col-tab {width: 48%;}*/
   .col-tab {width: auto;}
   .logoImage {width: 200px;} /*Logo image size for tablet */
 
   .container {
     display: grid;
-    grid-template-columns: [col-1-start] 200px [col-2-start] 1fr [col-3-start]
-      5fr [col-4-start] 0.8fr [col-4-end];
+    grid-template-columns: [col-1-start] 200px [col-2-start] 0.5fr [col-3-start]
+      5fr [col-4-start] 0.3fr [col-4-end];
   }
 
   .verticalBar {
@@ -123,15 +121,6 @@ h1 {
     /* New */
     padding-bottom: 5px; /* Extra padding under the links */
   }
-/*
-  .verticalBar {
-    margin-left: 8%;
-    width: 80%;
-    height: auto;
-    background-color: white;
-    position: fixed;*/ /*Move with the screen*/
-/*  }
-*/
 
   .main {
     grid-column: col-3-start/col-4-start;
@@ -165,16 +154,17 @@ h1 {
 /* pc */
 @media only screen and (min-width: 1000px) {
   .col-pc {width: auto;}
-  /*.col-pc {width: 58%;}*/
   .logoImage {width: 300px;} /* Bigger logo */
   .image {max-width: 60%;} /* Image scaling */
 
-  .verticalBar {
-    width: 300px; /* Bigger logo, bigger vertical bar */
+  .container {
+    display: grid;
+    grid-template-columns: [col-1-start] 300px [col-2-start] 0.5fr [col-3-start]
+      5fr [col-4-start] 0.3fr [col-4-end];
   }
 
-  .main {
-    margin-left: 300px; /* Want the main box on the right side of the menu */
+  .verticalBar {
+    width: 300px; /* Same as the logo image */
   }
 
   .menyStyle {
