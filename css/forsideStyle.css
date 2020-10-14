@@ -4,7 +4,6 @@ body {
   margin-top: 7%;
   overflow-x: hidden; /* No horizontal scrolling */
   background-image: url("../images/bookBackground.jpg");
-  height: 100%;
 }
 
 /* links */
@@ -21,23 +20,33 @@ a:hover {
 .imageScale {width: 330px;}
 
 .container {
+  /*display: grid;*/
   display: grid;
-  grid-template-columns: auto;
+  /*grid-template-columns: auto;
   grid-auto-rows: minmax(100px, auto);
   grid-auto-columns: minmax(100px, 400px);
-  grid-gap: 1vw;
+  grid-gap: 1vw;*/
+  /*grid-template-columns: 50% 15% 40%;*/
+  grid-template-columns: [col-1-start] 1.5fr [col-2-start] 0.5fr [col-3-start]
+    1fr [col-4-start] 0.2fr [col-4-end];
+  /*grid-template-columns: [col-1-start] 1.2fr [col-2-start] 1fr [col-2-end];
+  grid-gap: 10%;*/
 }
 
 .leftSide {
-  grid-column: 1/5;
+  grid-column: col-1-start/col-2-start;
   grid-row: auto;
   height: auto;
 }
 
+.chapterBox {
+  grid-column: col-2-start/col-3-start;
+  margin-left: 20%;
+}
+
 .rightSide {
-  grid-column: 2/5;
+  grid-column: col-3-start/col-4-start;
   grid-row: auto;
-  margin-left: -3%;
 }
 
 button {
@@ -51,21 +60,23 @@ button {
   display: block;
   padding: 5%;
   width: 100%;
+  height: 80px;
 }
 
 /* tablets */
 @media only screen and (min-width: 600px) {
-  .col-tab {width: 48%;}
+  .col-tab {width: auto;}
   .imageScale { width: 80%;}
 
   .rightSide {
-    margin-left: 10%; /* Want space between logo and buttons */
-    grid-column: 5/8; /* Change from 2/5 to 5/8 */
+    /*margin-left: 10%;*/ /* Want space between logo and buttons */
+    /*grid-column: 5/8;*/ /* Change from 2/5 to 5/8 */
+    /*grid-column: 1fr;*/
   }
 
   button {
     font-size: 2em; /* Bigger font on tablet */
-    width: 140%; /* Better look, wider buttons */
+    /*width: 100%;*/ /* Better look, wider buttons */
   }
 }
 
@@ -74,6 +85,7 @@ button {
   body {
       background-size: 100%;
   }
-  .col-pc {width: 58%;}
+  /*.col-pc {width: 58%;}*/
+  .col-pc {width: auto;}
   .imageScale { width: 100%;}
 }
