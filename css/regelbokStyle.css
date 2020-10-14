@@ -41,10 +41,10 @@ sub, sup {
 }
 
 /* Boxes */
-[class*="col-"] {
+/*[class*="col-"] {
   float:left;
   background-color: white;
-}
+}*/
 
 /* Phones */
 body {
@@ -59,31 +59,33 @@ h1 {
   font-size: 2em; /* Heading size on phone */
 }
 
-.col-ph {width: 320px;} /* Box scaling */
-.logoImage {width: 340px;} /*Logo image size for phone */
+/*.col-ph {width: 320px;}*/ /* Box scaling */
+.col-ph {width: auto;}
+.logoImage {width: 100%;} /*Logo image size for phone */
 .image {width: 100%;} /* Image scaling */
 
 /*Flex boxes*/
 .container {
   display: grid;
-  grid-template-columns: auto;
-  grid-auto-rows: minmax(0px, auto);
-  grid-auto-columns: minmax(0px, auto);
-  grid-gap: 1vw;
+  grid-template-columns: [col-1-start] 0.1fr [col-2-start] 1fr [col-3-start]
+    0.1fr [col-3-end];
 }
 
 .verticalBar {
-  grid-column: 1/2; /*Starts at 1 and stops when it reaches the second column*/
-  grid-row: auto; /*Goes on as long as it needs*/
-  width: 340px; /* Same as the logo image */
+  /*grid-column: col-2-start/col-3-start;
+  grid-row: auto;*/ /*Goes on as long as it needs*/
+  /*width: 340px;*/ /* Same as the logo image */
+  margin-left: 8.1%;
+  width: 79.9%;
   height: auto;
   background-color: white;
   position: fixed; /*Move with the screen*/
 }
 
 .main {
+  background-color: white;
   margin-top: 140px;
-  grid-column: 1/2;
+  grid-column: col-2-start/col-3-start;
   grid-row: auto;
   /* Space around text in main */
   padding-left: 15px;
@@ -103,19 +105,18 @@ h1 {
     font-size: 4em; /* Heading size on tablet */
   }
 
-  .col-tab {width: 48%;}
+  /*.col-tab {width: 48%;}*/
+  .col-tab {width: auto;}
   .logoImage {width: 200px;} /*Logo image size for tablet */
 
   .container {
     display: grid;
-    grid-template-columns: auto;
-    grid-auto-rows: minmax(0px, auto);
-    grid-auto-columns: minmax(0px, auto);
-    grid-gap: 1vw;
+    grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start]
+      3fr [col-4-start] 1fr [col-4-end];
   }
 
   .verticalBar {
-    grid-column: 1/2; /*Starts at 1 and stops when it reaches the second column*/
+    grid-column: col-1-start/col-2-start;
     grid-row: auto; /*Goes on as long as it needs*/
     width: 200px; /* Same as the logo image */
     height: auto;
@@ -126,8 +127,8 @@ h1 {
   }
 
   .main {
-    margin-left: 200px; /* Want the main box on the right side of the menu */
-    grid-column: 2/8; /* Tablet have 2/8 instead of 1/2 */
+    /*margin-left: 200px;*/ /* Want the main box on the right side of the menu */
+    grid-column: col-3-start/col-4-start;
     grid-row: auto;
     /* More padding */
     padding-left: 50px;
@@ -158,7 +159,8 @@ h1 {
 
 /* pc */
 @media only screen and (min-width: 1000px) {
-  .col-pc {width: 58%;}
+  .col-pc {width: auto;}
+  /*.col-pc {width: 58%;}*/
   .logoImage {width: 300px;} /* Bigger logo */
   .image {max-width: 60%;} /* Image scaling */
 
