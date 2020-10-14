@@ -65,7 +65,6 @@ button {
   .col-tab {width: auto;}
 
   .container {
-    /*  */
     /* 4 columns. First and last column will be empty. The third one is 3
     times bigger than the second column. */
     display: grid;
