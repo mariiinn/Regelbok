@@ -68,15 +68,8 @@ button {
   .col-tab {width: auto;}
   .imageScale { width: 80%;}
 
-  .rightSide {
-    /*margin-left: 10%;*/ /* Want space between logo and buttons */
-    /*grid-column: 5/8;*/ /* Change from 2/5 to 5/8 */
-    /*grid-column: 1fr;*/
-  }
-
   button {
-    font-size: 2em; /* Bigger font on tablet */
-    /*width: 100%;*/ /* Better look, wider buttons */
+    font-size: 1.7em; /* Bigger font on tablet */
   }
 }
 
@@ -88,4 +81,8 @@ button {
   /*.col-pc {width: 58%;}*/
   .col-pc {width: auto;}
   .imageScale { width: 100%;}
+
+  button {
+    font-size: 2em;
+  }
 }
