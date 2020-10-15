@@ -10,10 +10,7 @@
 
 <body>
 
-
-
-<!-- Phone version-->
-<div class="container hideOnTab hideOnPc">
+<div class="container">
 
 <div class="verticalBar">
   <picture>
@@ -23,105 +20,264 @@
       alt="Regelboka. logo">
     </a>
   </picture>
+
+  <div class="menyStyle hideOnPh"> <!-- For tablet and pc only -->
+    <a href="logikk.html">Logikk</a><br/>
+    <a class="active" href="mengder.html">Mengder</a><br/>
+    <a href="funksjoner.html">Funksjoner</a><br/>
+    <a href="folgerOgRekker.html">Følger og rekker</a><br/>
+    <a href="matriser.html">Matriser</a><br/>
+  </div>
 </div>
 
-<div class="main col-ph">
-<h1>Mengder</h1>
+<div class="main">
+  <h1>Mengder</h1>
 
   <p>
     <span class="uppercase-red"> Mengde: </span><br/>
     Uordnet samling av objekter/elementer.
   </p>
 
-  <p><span class="uppercase-red"> Kjente mengder: </span></p>
-  <ul style="margin-top: -10px;">
-    <li>De naturlige tallene &Nopf; = { 0, 1, 2, ... }</li>
-    <li>
-      De hele tallene &Zopf; = { ..., -1, 0, 1, ... }<br/>
-      Inkluderer &Nopf;.
-    </li>
-    <li>
-      De rasjonale tallene &Qopf; = Hele tall og brøker der
-      teller og nevner er hele tall.<br/>
-      Inkluderer &Zopf;.
-    </li>
-    <li>
-      De reelle tallene &Ropf; = Alle tall på tallinja.<br/>
-      Inkluderer &Qopf;.
-    </li>
-  </ul>
+  <div class="hideOnTabAndPc">
+    <p><span class="uppercase-red"> Kjente mengder: </span></p>
+    <ul style="margin-top: -10px;">
+      <li>De naturlige tallene &Nopf; = { 0, 1, 2, ... }</li>
+      <li>
+        De hele tallene &Zopf; = { ..., -1, 0, 1, ... }<br/>
+        Inkluderer &Nopf;.
+      </li>
+      <li>
+        De rasjonale tallene &Qopf; = Hele tall og brøker der
+        teller og nevner er hele tall.<br/>
+        Inkluderer &Zopf;.
+      </li>
+      <li>
+        De reelle tallene &Ropf; = Alle tall på tallinja.<br/>
+        Inkluderer &Qopf;.
+      </li>
+    </ul>
+  </div> <!-- end of phone version kjente mengder -->
 
-  <p><span class="uppercase-red"> Symboler i mengdelære: </span></p>
+  <div class="hideOnPh showOnTabAndPc">
+    <p><span class="uppercase-red"> Kjente mengder: </span></p>
+    <table class="tableScaling1" style="margin-top: -10px;">
+      <tr>
+        <th>Mengde</th>
+        <th>Symbol</th>
+        <th>Beskrivelse</th>
+        <th>Inkluderer</th>
+      </tr>
+      <tr>
+        <td>De naturlige tallene</td>
+        <td style="font-size: 2em;">&Nopf;</td>
+        <td>{ 0, 1, 2, ... }</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>De hele tallene</td>
+        <td style="font-size: 2em;">&Zopf;</td>
+        <td>{ ..., -2, -1, 0, 1, 2, ... }</td>
+        <td style="font-size: 2em;">&Nopf;</td>
+      </tr>
+      <tr>
+        <td>De rasjonale tallene</td>
+        <td style="font-size: 2em;">&Qopf;</td>
+        <td>Alle hele tall og brøker der teller og nevner er hele tall</td>
+        <td style="font-size: 2em;">&Zopf;</td>
+      </tr>
+      <tr>
+        <td>De reelle tallene</td>
+        <td style="font-size: 2em;">&Ropf;</td>
+        <td>Alle tall på tallinja</td>
+        <td style="font-size: 2em;">&Qopf;</td>
+      </tr>
+    </table>
+  </div> <!-- end of tablet and pc version kjente mengder -->
 
-  <ul style="margin-top: -10px;">
-    <li>
-      Delmengde (&sub;):<br/>A &sub; B leses som mengde A<br/> ligger
-      innenfor mengde B.<br/>Venndiagram:
-      <picture>
-        <img src="images/mengdeSub.png" class="image" alt="Venndiagram eksempel
-        på delmengde">
-      </picture>
-    </li>
-    <li>
-      Delmengde av eller lik (&sube;):<br/>A &sube; B leses som
-      mengde A ligger<br/> innenfor mengde B eller er lik B.
-    </li>
-    <li>
-      Den tomme mengden (&empty;):<br/>A = { } leses som mengde A inneholder
-      ingen elementer.
-    </li>
-    <li>
-      Snitt (&cap;):<br/>A &cap; B leses som mengden av<br/> elementene som A og
-      B har til felles.<br/>Venndiagram:
-      <picture>
-        <img src="images/mengdeSnitt.png" class="image" alt="Venndiagram
-        eksempel på snitt">
-      </picture>
-    </li>
-    <li>
-      Union (&cup;):<br/>A &cup; B leses som mengden av<br/> elementene som er
-      i A eller B,<br/> eller i begge.<br/>Venndiagram:
-      <picture>
-        <img src="images/mengdeUnion.png" class="image" alt="Venndiagram
-        eksempel på union">
-      </picture>
-    </li>
-    <li>
-      Eksklusiv union (&oplus;):<br/>A &oplus; B leses som mengden av
-      <br/>elementene som er i A eller B<br/> som ikke overlapper hverandre.<br/>
-      Venndiagram:
-      <picture>
-        <img src="images/mengdeEksUnion.png" class="image" alt="Venndiagram
-        eksempel på eksklusiv union">
-      </picture>
-    </li>
-    <li>
-      Differanse (&minus;):<br/>A &minus; B leses som mengden av<br/>
-      elementene som er i A men ikke i B.<br/>Venndiagram:
-      <picture>
-        <img src="images/mengdeDiff.png" class="image" alt="Venndiagram
-        eksempel på differanse">
-      </picture>
-    </li>
-    <li>
-      Komplement (<span style="text-decoration: overline;">A</span>):<br/>
-      <span style="text-decoration: overline;">A</span> leses som mengden av
-      elementene<br/> som er i universalmengden U,<br/> men ikke i A.<br/>
-      Venndiagram:
-      <picture>
-        <img src="images/mengdeUniv.png" class="image" alt="Venndiagram
-        eksempel på komplement">
-      </picture>
-    </li>
-  </ul>
+  <div class="hideOnTabAndPc">
+    <p><span class="uppercase-red"> Symboler i mengdelære: </span></p>
+
+    <ul style="margin-top: -10px;">
+      <li>
+        Delmengde (&sub;):<br/>A &sub; B leses som mengde A ligger
+        innenfor mengde B.<br/>Venndiagram:
+        <picture>
+          <img src="images/mengdeSub.png" alt="Venndiagram eksempel på
+            delmengde" style="width: 80%;">
+        </picture>
+      </li>
+      <li>
+        Delmengde av eller lik (&sube;):<br/>A &sube; B leses som
+        mengde A ligger innenfor mengde B eller er lik B.
+      </li>
+      <li>
+        Den tomme mengden (&empty;):<br/>A = { } leses som mengde A inneholder
+        ingen elementer.
+      </li>
+      <li>
+        Snitt (&cap;):<br/>A &cap; B leses som mengden av elementene som A og
+        B har til felles.<br/>Venndiagram:
+        <picture>
+          <img src="images/mengdeSnitt.png" alt="Venndiagram eksempel på snitt"
+            style="width: 80%;">
+        </picture>
+      </li>
+      <li>
+        Union (&cup;):<br/>A &cup; B leses som mengden av elementene som er
+        i A eller B, eller i begge.<br/>Venndiagram:
+        <picture>
+          <img src="images/mengdeUnion.png" alt="Venndiagram eksempel på union"
+            style="width: 80%;">
+        </picture>
+      </li>
+      <li>
+        Eksklusiv union (&oplus;):<br/>A &oplus; B leses som mengden av
+        elementene som er i A eller B som ikke overlapper hverandre.<br/>
+        Venndiagram:
+        <picture>
+          <img src="images/mengdeEksUnion.png" alt="Venndiagram eksempel på
+            eksklusiv union" style="width: 80%;">
+        </picture>
+      </li>
+      <li>
+        Differanse (&minus;):<br/>A &minus; B leses som mengden av
+        elementene som er i A men ikke i B.<br/>Venndiagram:
+        <picture>
+          <img src="images/mengdeDiff.png" alt="Venndiagram eksempel på
+            differanse" style="width: 80%;">
+        </picture>
+      </li>
+      <li>
+        Komplement (<span style="text-decoration: overline;">A</span>):<br/>
+        <span style="text-decoration: overline;">A</span> leses som mengden av
+        elementene som er i universalmengden U, men ikke i A.<br/>
+        Venndiagram:
+        <picture>
+          <img src="images/mengdeUniv.png" alt="Venndiagram eksempel på
+            komplement" style="width: 80%;">
+        </picture>
+      </li>
+    </ul>
+  </div> <!-- end of phone version symboler i mengdelære -->
+
+  <div class="hideOnPh showOnTabAndPc">
+    <p><span class="uppercase-red"> Symboler i mengdelære: </span></p>
+    <table class="tableScaling3" style="margin-top: -10px;">
+      <tr>
+        <th>Navn</th>
+        <th>Symbol</th>
+        <th>Matematisk beskrivelse</th>
+        <th>Beskrivelse</th>
+        <th>Venndiagram</th>
+      </tr>
+      <tr>
+        <td>Delmengde</td>
+        <td>&sub;</td>
+        <td>A &sub; B</td>
+        <td>Mengde A ligger innenfor mengde B</td>
+        <td>
+          <picture>
+            <img src="images/mengdeSub.png" style="max-width: 100%;"
+            alt="Venndiagram eksempel på delmengde">
+          </picture>
+        </td>
+      </tr>
+      <tr>
+        <td>Delmengde av eller lik</td>
+        <td>&sube;</td>
+        <td>A &sube; B</td>
+        <td>Mengde A ligger innenfor mengde B eller er lik B</td>
+        <td>
+          <picture>
+            <img src="images/mengdeTom.png" style="max-width: 100%;"
+            alt="Ingen bilde">
+          </picture>
+        </td>
+      </tr>
+      <tr>
+        <td>Den tomme mengden</td>
+        <td>&empty;</td>
+        <td>A = { }</td>
+        <td>Mengde A inneholder ingen elementer </td>
+        <td>
+          <picture>
+            <img src="images/mengdeTom.png" style="max-width: 100%;"
+            alt="Ingen bilde">
+          </picture>
+        </td>
+      </tr>
+      <tr>
+        <td>Snitt</td>
+        <td>&cap;</td>
+        <td>A &cap; B</td>
+        <td>Mengden av elementene som A og B har til felles</td>
+        <td>
+          <picture>
+            <img src="images/mengdeSnitt.png" style="max-width: 100%;"
+            alt="Venndiagram eksempel på snitt">
+          </picture>
+        </td>
+      </tr>
+      <tr>
+        <td>Union</td>
+        <td>&cup;</td>
+        <td>A &cup; B</td>
+        <td>Mengden av elementene som er i A eller B, eller i begge</td>
+        <td>
+          <picture>
+            <img src="images/mengdeUnion.png" style="max-width: 100%;"
+            alt="Venndiagram eksempel på union">
+          </picture>
+        </td>
+      </tr>
+      <tr>
+        <td>Eksklusiv union</td>
+        <td>&oplus;</td>
+        <td>A &oplus; B</td>
+        <td>Mengden av elementene som er i A eller B som ikke
+          overlapper hverandre</td>
+        <td>
+          <picture>
+            <img src="images/mengdeEksUnion.png" style="max-width: 100%;"
+            alt="Venndiagram eksempel på eksklusiv union">
+          </picture>
+        </td>
+      </tr>
+      <tr>
+        <td>Differanse</td>
+        <td>&minus;</td>
+        <td>A &minus; B</td>
+        <td>Mengden av elementene som er i A men ikke i B</td>
+        <td>
+          <picture>
+            <img src="images/mengdeDiff.png" style="max-width: 100%;"
+            alt="Venndiagram eksempel på differanse">
+          </picture>
+        </td>
+      </tr>
+      <tr>
+        <td>Komplement</td>
+        <td><span style="text-decoration: overline;">A</span></td>
+        <td><span style="text-decoration: overline;">A</span></td>
+        <td>Mengden av elementene som er i universalmengden U,
+          men ikke i A</td>
+        <td>
+          <picture>
+            <img src="images/mengdeUniv.png" style="max-width: 100%;"
+            alt="Venndiagram eksempel på komplement">
+          </picture>
+        </td>
+      </tr>
+    </table>
+  </div> <!-- end of tablet and pc version symboler i mengdelære -->
 
   <p>
     <span class="uppercase-red"> Kartesisk produkt: </span><br/>
-    (a,b): førstekoordinat er fra A og<br/> andrekoordinat er fra B.<br/>
+    (a,b): førstekoordinat er fra A og andrekoordinat er fra B.<br/>
     For eksempel la A = { a<sub>1</sub>, a<sub>2</sub> } og
-    B = { b<sub>1</sub>, b<sub>2</sub> }. Da er A &times; B =
+    B = { b<sub>1</sub>, b<sub>2</sub> }. <span>Da er A &times; B =
     { (a<sub>1</sub>,b<sub>1</sub>), (a<sub>1</sub>,b<sub>2</sub>),
-    (a<sub>2</sub>,b<sub>1</sub>), (a<sub>2</sub>,b<sub>2</sub>) }
+    (a<sub>2</sub>,b<sub>1</sub>), (a<sub>2</sub>,b<sub>2</sub>) }</span>
   </p>
 
   <p>
@@ -139,11 +295,11 @@
   <p><span class="uppercase-red"> Formler for kardinalitet: </span></p>
   <ul style="margin-top: -10px;">
     <li>|A &cup; B| = |A| + |B| - |A &cap; B|</li>
-    <li>|A &cup; B &cup; C| = |A| + |B| + |C| - |A &cap; B|<br/>
-      - |A &cap; C| - |B &cap; C| + |A &cap; B &cap; C|</li>
+    <li>|A &cup; B &cup; C| = |A| + |B| + |C| - |A &cap; B|
+      <span>- |A &cap; C| - |B &cap; C| + |A &cap; B &cap; C|</span></li>
     <li>|A &minus; B| = |A| - |A &cap; B|</li>
-    <li>|A &oplus; B| = |A &minus; B| + |B &minus; A| =<br/>|A| + |B|
-      - 2|A &cap; B|</li>
+    <li>|A &oplus; B| = |A &minus; B| + |B &minus; A| =<span>|A| + |B|
+      - 2|A &cap; B|</span></li>
   </ul>
 
   <p><span class="uppercase-red"> De Morgan's lover: </span></p>
@@ -168,249 +324,14 @@
 
   <p><span class="uppercase-red"> Assosiative lover: </span></p>
   <ul style="margin-top: -10px;">
-    <li>A &cap; (B &cap; C) = (A &cap; B) &cap; C =<br/>
+    <li>A &cap; (B &cap; C) = (A &cap; B) &cap; C =
       A &cap; B &cap; C</li>
-    <li>A &cup; (B &cup; C) = (A &cup; B) &cup; C =<br/>
+    <li>A &cup; (B &cup; C) = (A &cup; B) &cup; C =
       A &cup; B &cup; C</li>
   </ul>
 
 </div> <!-- end of main -->
-</div> <!-- end of container phone version -->
-
-
-<!-- Tablet and pc version -->
-<div class="container hideOnPh">
-
-<div class="verticalBar">
-  <picture>
-    <!-- margin-left to override hoverefect. -->
-    <a href="index.html" style="margin-left: 0px;">
-      <img src="images/regelbokLogo1.png" class="logoImage"
-      alt="Regelboka. logo">
-    </a>
-  </picture>
-
-  <div class="menyStyle">
-    <a href="logikk.html">Logikk</a><br/>
-    <a class="active" href="mengder.html">Mengder</a><br/>
-    <a href="funksjoner.html">Funksjoner</a><br/>
-    <a href="folgerOgRekker.html">Følger og rekker</a><br/>
-    <a href="matriser.html">Matriser</a><br/>
-  </div>
-</div>
-
-<div class="main col-pc col-tab">
-<h1>Mengder</h1>
-
-  <p>
-    <span class="uppercase-red"> Mengde: </span>
-    Uordnet samling av objekter/elementer.
-  </p>
-
-  <p><span class="uppercase-red"> Kjente mengder: </span></p>
-  <table class="tableScaling1" style="margin-top: -10px;">
-    <tr>
-      <th>Mengde</th>
-      <th>Symbol</th>
-      <th>Beskrivelse</th>
-      <th>Inkluderer</th>
-    </tr>
-    <tr>
-      <td>De naturlige tallene</td>
-      <td style="font-size: 2em;">&Nopf;</td>
-      <td>{ 0, 1, 2, ... }</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>De hele tallene</td>
-      <td style="font-size: 2em;">&Zopf;</td>
-      <td>{ ..., -2, -1, 0, 1, 2, ... }</td>
-      <td style="font-size: 2em;">&Nopf;</td>
-    </tr>
-    <tr>
-      <td>De rasjonale tallene</td>
-      <td style="font-size: 2em;">&Qopf;</td>
-      <td>Alle hele tall og brøker der teller og nevner er hele tall</td>
-      <td style="font-size: 2em;">&Zopf;</td>
-    </tr>
-    <tr>
-      <td>De reelle tallene</td>
-      <td style="font-size: 2em;">&Ropf;</td>
-      <td>Alle tall på tallinja</td>
-      <td style="font-size: 2em;">&Qopf;</td>
-    </tr>
-  </table>
-
-  <p><span class="uppercase-red"> Symboler i mengdelære: </span></p>
-  <table class="tableScaling3" style="margin-top: -10px;">
-    <tr>
-      <th>Navn</th>
-      <th>Symbol</th>
-      <th>Matematisk beskrivelse</th>
-      <th>Beskrivelse</th>
-      <th>Venndiagram</th>
-    </tr>
-    <tr>
-      <td>Delmengde</td>
-      <td>&sub;</td>
-      <td>A &sub; B</td>
-      <td>Mengde A ligger innenfor mengde B</td>
-      <td>
-        <picture>
-          <img src="images/mengdeSub.png" style="max-width: 100%;"
-          alt="Venndiagram eksempel på delmengde">
-        </picture>
-      </td>
-    </tr>
-    <tr>
-      <td>Delmengde av eller lik</td>
-      <td>&sube;</td>
-      <td>A &sube; B</td>
-      <td>Mengde A ligger innenfor mengde B eller er lik B</td>
-      <td>
-        <picture>
-          <img src="images/mengdeTom.png" style="max-width: 100%;"
-          alt="Ingen bilde">
-        </picture>
-      </td>
-    </tr>
-    <tr>
-      <td>Den tomme mengden</td>
-      <td>&empty;</td>
-      <td>A = { }</td>
-      <td>Mengde A inneholder ingen elementer </td>
-      <td>
-        <picture>
-          <img src="images/mengdeTom.png" style="max-width: 100%;"
-          alt="Ingen bilde">
-        </picture>
-      </td>
-    </tr>
-    <tr>
-      <td>Snitt</td>
-      <td>&cap;</td>
-      <td>A &cap; B</td>
-      <td>Mengden av elementene som A og B har til felles</td>
-      <td>
-        <picture>
-          <img src="images/mengdeSnitt.png" style="max-width: 100%;"
-          alt="Venndiagram eksempel på snitt">
-        </picture>
-      </td>
-    </tr>
-    <tr>
-      <td>Union</td>
-      <td>&cup;</td>
-      <td>A &cup; B</td>
-      <td>Mengden av elementene som er i A eller B, eller i begge</td>
-      <td>
-        <picture>
-          <img src="images/mengdeUnion.png" style="max-width: 100%;"
-          alt="Venndiagram eksempel på union">
-        </picture>
-      </td>
-    </tr>
-    <tr>
-      <td>Eksklusiv union</td>
-      <td>&oplus;</td>
-      <td>A &oplus; B</td>
-      <td>Mengden av elementene som er i A eller B som ikke
-        overlapper hverandre</td>
-      <td>
-        <picture>
-          <img src="images/mengdeEksUnion.png" style="max-width: 100%;"
-          alt="Venndiagram eksempel på eksklusiv union">
-        </picture>
-      </td>
-    </tr>
-    <tr>
-      <td>Differanse</td>
-      <td>&minus;</td>
-      <td>A &minus; B</td>
-      <td>Mengden av elementene som er i A men ikke i B</td>
-      <td>
-        <picture>
-          <img src="images/mengdeDiff.png" style="max-width: 100%;"
-          alt="Venndiagram eksempel på differanse">
-        </picture>
-      </td>
-    </tr>
-    <tr>
-      <td>Komplement</td>
-      <td><span style="text-decoration: overline;">A</span></td>
-      <td><span style="text-decoration: overline;">A</span></td>
-      <td>Mengden av elementene som er i universalmengden U,
-        men ikke i A</td>
-      <td>
-        <picture>
-          <img src="images/mengdeUniv.png" style="max-width: 100%;"
-          alt="Venndiagram eksempel på komplement">
-        </picture>
-      </td>
-    </tr>
-  </table>
-
-  <p>
-    <span class="uppercase-red"> Kartesisk produkt: </span>
-    (a,b): førstekoordinat er fra A og andrekoordinat er fra B.<br/>
-    For eksempel la A = { a<sub>1</sub>, a<sub>2</sub> } og
-    B = { b<sub>1</sub>, b<sub>2</sub> }. Da er A &times; B =
-    { (a<sub>1</sub>,b<sub>1</sub>), (a<sub>1</sub>,b<sub>2</sub>),
-    (a<sub>2</sub>,b<sub>1</sub>), (a<sub>2</sub>,b<sub>2</sub>) }
-  </p>
-
-  <p>
-    <span class="uppercase-red"> Kardinalitet: </span>
-    Størrelsen til en mengde. Antall forskjellige elementer i mengden.
-    Skrives: |A|
-  </p>
-
-  <p>
-    <span class="uppercase-red"> Potensmengde: </span>
-    Potensmengden til A, P(A), er mengden som inneholder alle delmengder
-    av A. Formel: |P(A)| = 2<sup>|A|</sup>
-  </p>
-
-  <p><span class="uppercase-red"> Formler for kardinalitet: </span></p>
-  <ul style="margin-top: -10px;">
-    <li>|A &cup; B| = |A| + |B| - |A &cap; B|</li>
-    <li>|A &cup; B &cup; C| = |A| + |B| + |C| - |A &cap; B|
-      - |A &cap; C| - |B &cap; C| + |A &cap; B &cap; C|</li>
-    <li>|A &minus; B| = |A| - |A &cap; B|</li>
-    <li>|A &oplus; B| = |A &minus; B| + |B &minus; A| = |A| + |B|
-      - 2|A &cap; B|</li>
-  </ul>
-
-  <p><span class="uppercase-red"> De Morgan's lover: </span></p>
-  <ul style="margin-top: -10px;">
-    <li>
-      <span style="text-decoration: overline">A &cup; B</span>
-      = <span style="text-decoration: overline">A</span> &cap;
-      <span style="text-decoration: overline">A</span>
-    </li>
-    <li>
-      <span style="text-decoration: overline">A &cap; B</span>
-      = <span style="text-decoration: overline">A</span> &cup;
-      <span style="text-decoration: overline">A</span>
-    </li>
-  </ul>
-
-  <p><span class="uppercase-red"> Distributive lover: </span></p>
-  <ul style="margin-top: -10px;">
-    <li>A &cap; (B &cup; C) = (A &cap; B) &cup; (A &cap; C)</li>
-    <li>A &cup; (B &cap; C) = (A &cup; B) &cap; (A &cup; C)</li>
-  </ul>
-
-  <p><span class="uppercase-red"> Assosiative lover: </span></p>
-  <ul style="margin-top: -10px;">
-    <li>A &cap; (B &cap; C) = (A &cap; B) &cap; C = A &cap; B &cap; C</li>
-    <li>A &cup; (B &cup; C) = (A &cup; B) &cup; C = A &cup; B &cup; C</li>
-  </ul>
-
-
-</div> <!-- end of main -->
-</div> <!-- end of container tab and pc version -->
+</div> <!-- end of container -->
 
 </body>
-
 </html>
