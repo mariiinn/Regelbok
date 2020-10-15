@@ -44,12 +44,6 @@ sub, sup {
   text-decoration: underline;
 }
 
-/* Boxes */
-/*[class*="col-"] {
-  float:left;
-  background-color: white;
-}*/
-
 /* Phones */
 body {
   margin-top: 0px; /* No space over the content */
@@ -95,11 +89,6 @@ h1 {
 }
 
 .hideOnPh {display: none;} /* Hide this when the screen is phonescale */
-/*.menyStyle {
-  display: contents;
-  font-size: 1.5em;
-  padding: 0.6em;
-}*/
 
 /* tablets */
 @media only screen and (min-width: 600px) {
@@ -167,7 +156,7 @@ h1 {
 @media only screen and (min-width: 1000px) {
   /*.col-pc {width: auto;}*/
   .logoImage {width: 300px;} /* Bigger logo */
-  .image {max-width: 60%;} /* Image scaling */
+  .image {width: 60%;} /* Image scaling */
 
   .container {
     display: grid;
