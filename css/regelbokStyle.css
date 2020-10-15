@@ -23,13 +23,6 @@ span {
   margin-top: 10px;
 }
 
-.chapterText {
-  font-size: 40px;
-  border-bottom: 2px solid black;
-  margin-top: -20px;
-  margin-bottom: 5px;
-}
-
 sub, sup {
   font-size: 0.5em;
 }
@@ -110,6 +103,13 @@ h1 {
   /*.col-tab {width: auto;}*/
   .logoImage {width: 200px;} /*Logo image size for tablet */
 
+  .chapterText {
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    margin-top: -20px;
+    margin-bottom: 5px;
+  }
+
   .container {
     display: grid;
     grid-template-columns: [col-1-start] 200px [col-2-start] 0.5fr [col-3-start]
@@ -141,7 +141,7 @@ h1 {
   /* Used in the fixed vertical menu that only tablet and pc have */
   .menyStyle {
     display: block; /* Change from none to block */
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 0.6em;
   }
 
@@ -165,6 +165,10 @@ h1 {
   .logoImage {width: 300px;} /* Bigger logo */
   .image {width: 60%;} /* Image scaling */
 
+  .chapterText {
+    font-size: 40px;
+  }
+
   .container {
     display: grid;
     grid-template-columns: [col-1-start] 300px [col-2-start] 0.5fr [col-3-start]
@@ -176,7 +180,7 @@ h1 {
   }
 
   .menyStyle {
-    font-size: 2em; /* Bigger text */
+    font-size: 1.5em; /* Bigger text */
     padding: 1em; /* More padding */
   }
 
