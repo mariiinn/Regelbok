@@ -177,7 +177,7 @@ h1 {
 
   .menyStyle {
     font-size: 2em; /* Bigger text */
-    /*padding: 1em;*/ /* More padding */
+    padding: 1em; /* More padding */
   }
 
   .tableScaling1 {
