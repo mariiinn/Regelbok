@@ -10,6 +10,10 @@ th, td {
   padding: 10px;
 }
 
+span {
+  white-space: nowrap; /* Don't break the sentence wrapped in the span tag */
+}
+
 .uppercase-red {
   color: red;
   text-transform: uppercase;
@@ -49,6 +53,7 @@ sub, sup {
 /* Phones */
 body {
   margin-top: 0px; /* No space over the content */
+  margin-bottom: 50px;
   padding-left: 5px;
   background-image: url("../images/mathBackground.jpg");
   background-size: 350px;
@@ -59,7 +64,7 @@ h1 {
   font-size: 2em; /* Heading size on phone */
 }
 
-.col-ph {width: auto;}
+/*.col-ph {width: auto;}*/
 .logoImage {width: 100%;} /*Logo image size for phone */
 .image {width: 100%;} /* Image scaling */
 
@@ -84,12 +89,17 @@ h1 {
   grid-column: col-2-start/col-3-start;
   grid-row: auto;
   /* Space around text in main */
-  padding-left: 15px;
-  padding-right: 5px;
-  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .hideOnPh {display: none;} /* Hide this when the screen is phonescale */
+/*.menyStyle {
+  display: contents;
+  font-size: 1.5em;
+  padding: 0.6em;
+}*/
 
 /* tablets */
 @media only screen and (min-width: 600px) {
@@ -101,7 +111,7 @@ h1 {
     font-size: 3em; /* Heading size on tablet */
   }
 
-  .col-tab {width: auto;}
+  /*.col-tab {width: auto;}*/
   .logoImage {width: 200px;} /*Logo image size for tablet */
 
   .container {
@@ -134,6 +144,7 @@ h1 {
 
   /* Used in the fixed vertical menu that only tablet and pc have */
   .menyStyle {
+    display: block; /* Change from none to block */
     font-size: 1.5em;
     padding: 0.6em;
   }
@@ -148,12 +159,13 @@ h1 {
     font-size: 0.5em;
   }
 
-  .hideOnTab {display: none;} /* Hide this on tablet */
+  .hideOnTabAndPc {display: none;} /* Hide content on tablet and pc */
+  .showOnTabAndPc {display: block;} /* Show content hidden on the phone version */
 }
 
 /* pc */
 @media only screen and (min-width: 1000px) {
-  .col-pc {width: auto;}
+  /*.col-pc {width: auto;}*/
   .logoImage {width: 300px;} /* Bigger logo */
   .image {max-width: 60%;} /* Image scaling */
 
@@ -180,5 +192,5 @@ h1 {
     font-size: 1em; /* Bigger text in tables on pc */
   }
 
-  .hideOnPc {display: none;} /* Hide this on pc */
+  /*.hideOnPc {display: none;}*/ /* Hide this on pc */
 }
