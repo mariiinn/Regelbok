@@ -10,8 +10,7 @@
 
 <body>
 
-<!-- Phone version-->
-<div class="container hideOnTab hideOnPc">
+<div class="container">
 
 <div class="verticalBar">
   <picture>
@@ -21,20 +20,28 @@
       alt="Regelboka. logo">
     </a>
   </picture>
+
+  <div class="menyStyle hideOnPh"> <!-- For tablet and pc only -->
+    <a href="logikk.html">Logikk</a><br/>
+    <a href="mengder.html">Mengder</a><br/>
+    <a href="funksjoner.html">Funksjoner</a><br/>
+    <a href="folgerOgRekker.html">Følger og rekker</a><br/>
+    <a class="active" href="matriser.html">Matriser</a><br/>
+  </div>
 </div>
 
-<div class="main col-ph">
-<h1>Matriser</h1>
+<div class="main">
+  <h1>Matriser</h1>
 
   <p>
     <span class="uppercase-red"> Matrise: </span><br/>
-    Sett av elementer i rader og kolonner.
-    Dimensjonen til en matrise: <br/>RADER &times; KOLONNER.
+    Sett av elementer i rader og kolonner.<br/>Dimensjonen til en matrise:
+    <span>RADER &times; KOLONNER.</span>
   </p>
   <picture>
     <img src="images/matrixDim.png" class="image" alt="Hoveddiagonalen
-    går fra nederste venstre hjørne til øverste høyre hjørne. Bidiagonalen
-    går fra øveste venstre hjørne til nederste høyre hjørne.">
+      går fra nederste venstre hjørne til øverste høyre hjørne. Bidiagonalen
+      går fra øveste venstre hjørne til nederste høyre hjørne.">
   </picture>
 
   <p>
@@ -45,7 +52,7 @@
   </p>
   <picture>
     <img src="images/matrixAdd.png" class="image" alt="Eksempel på
-    matriseaddisjon">
+      matriseaddisjon">
   </picture>
 
   <p>
@@ -56,317 +63,192 @@
   </p>
   <picture>
     <img src="images/matrixSub.png" class="image" alt="Eksempel på
-    matrisesubtraksjon">
+      matrisesubtraksjon">
   </picture>
 
   <p>
     <span class="uppercase-red"> Matrise- multiplikasjon: </span><br/>
-    VIKTIG: AB finnes kun om antall kolonner i<br/> A er lik antall rader i B.
-    Hvis A har dimensjon<br/> m &times; n og B har n &times; k, så har AB
-    dimensjon<br/> m &times; k.
+    VIKTIG: AB finnes kun om antall kolonner i A er lik antall rader i B.
+    Hvis A har dimensjon <span>m &times; n</span> og B har <span>n &times; k,
+    </span>så har AB dimensjon <span>m &times; k.</span>
   </p>
   <picture>
     <img src="images/matrixMult.png" class="image" alt="Eksempel på
-    matrisemultiplikasjon">
+      matrisemultiplikasjon">
   </picture>
 
   <p>
     Derfor er AB = BA bare hvis A og B er kvadratiske matriser (har
-    dimensjon m &times; m).<br/>
+    dimensjon <span>m &times; m).</span><br/>
     For kvadratiske matriser gjelder:
   </p>
   <picture>
     <img src="images/matrixKvad.png" class="image" alt="A gange A = A^2,
-    A^1 = A og A^0 = I">
+      A^1 = A og A^0 = I">
   </picture>
 
   <p>
     <span class="uppercase-red"> Identitetsmatrisen: </span><br/>
     Også kalt enhetsmatrisen. Er en kvadratisk matrise og er kommutativ
-    fordi AI = A = IA.
+    fordi <span>AI = A = IA.</span>
   </p>
   <picture>
-    <img src="images/matrixId.png" class="image" alt="I = kvadratisk matrise
-    med 1-ere på hoveddiagonalen">
+    <img src="images/matrixId.png" alt="I = kvadratisk matrise med 1-ere på
+      hoveddiagonalen" style="width: 60%">
   </picture>
 
   <p>
     <span class="uppercase-red"> Transponert matrise: </span><br/>
     Den matrisen vi får ved å bytte om rader og kolonner.
-    Legg merke til at hvis AB eksisterer,<br/> så blir (AB)<sup>T</sup>
-    = B<sup>T</sup>A<sup>T</sup>.
+    Legg merke til at hvis AB eksisterer, så blir <span>(AB)<sup>T</sup>
+    = B<sup>T</sup>A<sup>T</sup>.</span>
   </p>
   <picture>
     <img src="images/matrixTrans.png" class="image" alt="Eksempel på
-    transponert matrise">
+      transponert matrise">
   </picture>
 
   <p>
     <span class="uppercase-red"> Symmetri: </span><br/>
-    En kvadratisk matrise er symmetrisk hvis A = A<sup>T</sup>.
+    En kvadratisk matrise er symmetrisk hvis <span>A = A<sup>T</sup>.</span>
     <br/>Dvs. symmetrisk over hoveddiagonalen.
   </p>
   <picture>
     <img src="images/matrixSym.png" class="image" alt="Eksempel på
-    symmetrisk matrise">
+      symmetrisk matrise">
   </picture>
 
-  <p>
-    <span class="uppercase-red"> Logiske matriser: </span><br/>
-    En matrise der elementene er 0'ere eller 1'ere.<br/> 0 står for usann og
-    1 for sann.
-  </p>
-  <picture>
-    <img src="images/matrixAogBogC.png" class="image" alt="Viser hva matrise
-    A, B og C er for eksemplene under">
-  </picture>
-  <ul style="margin-top: 10px;">
-    <li>
-      Logisk eller (&or;):<br/>
-      Merk at 1 &or; 1 = 1, 1 &or; 0 = 0 &or; 1 = 1<br/>
-      og 0 &or; 0 = 0<br/>
-      A &and; B eksisterer dersom A og B<br/>har samme dimensjon.<br/>
-      Utførelse:
-    </li>
-  </ul>
-  <picture>
-    <img src="images/matrixLogEller.png" class="image" alt="Eksempel på
-    logisk eller">
-  </picture>
-  <ul>
-    <li>
-      Logisk og (&and;):<br/>
-      Merk at 1 &and; 1 = 1, 1 &and; 0 = 0 &and; 1 = 0<br/>
-      og 0 &and; 0 = 0<br/>
-      A &and; B eksisterer dersom A og B<br/>har samme dimensjon.<br/>
-      Utførelse:
-    </li>
-  </ul>
-  <picture>
-    <img src="images/matrixLogOg.png" class="image" alt="Eksempel på
-    logisk og">
-  </picture>
-  <ul>
-    <li>
-      Logisk multiplikasjon (&odot;):<br/>
-      Merk at A &odot; C eksisterer dersom A har<br/>like mange kolonner
-      som C har rader.<br/>
-      A &odot; C &ne; C &odot; A
-    </li>
-  </ul>
-  <picture>
-    <img src="images/matrixLogMult.png" class="image" alt="Eksempel på
-    logisk multiplikasjon">
-  </picture>
+  <div class="hideOnTabAndPc">
+    <p>
+      <span class="uppercase-red"> Logiske matriser: </span><br/>
+      En matrise der elementene er 0'ere eller 1'ere.<br/> 0 står for usann og
+      1 for sann.
+    </p>
+    <picture>
+      <img src="images/matrixAogBogC.png" class="image" alt="Viser hva matrise
+        A, B og C er for eksemplene under">
+    </picture>
+    <ul style="margin-top: 10px;">
+      <li>
+        Logisk eller (&or;):<br/>
+        Merk at 1 &or; 1 = 1, 1 &or; 0 = 0 &or; 1 = 1
+        <span>og 0 &or; 0 = 0</span><br/>
+        A &and; B eksisterer dersom A og B har samme dimensjon.<br/>
+        Utførelse:
+      </li>
+    </ul>
+    <picture>
+      <img src="images/matrixLogEller.png" class="image" alt="Eksempel på
+        logisk eller">
+    </picture>
+    <ul>
+      <li>
+        Logisk og (&and;):<br/>
+        Merk at 1 &and; 1 = 1, 1 &and; 0 = 0 &and; 1 = 0
+        <span>og 0 &and; 0 = 0</span><br/>
+        A &and; B eksisterer dersom A og B har samme dimensjon.<br/>
+        Utførelse:
+      </li>
+    </ul>
+    <picture>
+      <img src="images/matrixLogOg.png" class="image" alt="Eksempel på
+        logisk og">
+    </picture>
+    <ul>
+      <li>
+        Logisk multiplikasjon (&odot;):<br/>
+        Merk at A &odot; C eksisterer dersom A har like mange kolonner
+        som C har rader.<br/>
+        A &odot; C &ne; C &odot; A
+      </li>
+    </ul>
+    <picture>
+      <img src="images/matrixLogMult.png" class="image" alt="Eksempel på
+        logisk multiplikasjon">
+    </picture>
+  </div> <!-- end of phone version logiske matriser -->
+
+  <div class="hideOnPh showOnTabAndPc">
+    <p>
+      <span class="uppercase-red"> Logiske matriser: </span>
+      En matrise der elementene er 0'ere eller 1'ere. 0 står for usann og
+      1 for sann.
+    </p>
+    <picture>
+      <img src="images/matrixAogBogC.png" class="image" alt="Viser hva matrise
+        A, B og C er for eksemplene under">
+    </picture>
+    <table class="tableScaling1">
+      <tr>
+        <th>Operator</th>
+        <th>Symbol</th>
+        <th>Utførelse</th>
+        <th>Merk at</th>
+      </tr>
+      <tr>
+        <td>Logisk<br/>eller</td>
+        <td>&or;</td>
+        <td>
+          <picture>
+            <img src="images/matrixLogEller.png" style="max-width: 100%;"
+              alt="Eksempel på logisk eller">
+          </picture>
+        </td>
+        <td>
+          1 &or; 1 = 1<br/>
+          1 &or; 0 = 0 &or; 1 = 1<br/>
+          0 &or; 0 = 0<br/>
+          A &and; B eksisterer<br/>dersom A og B<br/>har samme dimensjon.
+        </td>
+      </tr>
+      <tr>
+        <td>Logisk<br/>og</td>
+        <td>&and;</td>
+        <td>
+          <picture>
+            <img src="images/matrixLogOg.png" style="max-width: 100%;"
+              alt="Eksempel på logisk eller">
+          </picture>
+        </td>
+        <td>
+          1 &and; 1 = 1<br/>
+          1 &and; 0 = 0 &and; 1 = 0<br/>
+          0 &and; 0 = 0<br/>
+          A &and; B eksisterer<br/>dersom A og B<br/>har samme dimensjon.
+        </td>
+      </tr>
+      <tr>
+        <td>Logisk<br/>multiplikasjon</td>
+        <td>&odot;</td>
+        <td>
+          <picture>
+            <img src="images/matrixLogMult.png" style="max-width: 100%;"
+              alt="Eksempel på logisk eller">
+          </picture>
+        </td>
+        <td>
+          A &odot; C eksisterer<br/>dersom A har<br/>like mange kolonner
+          <br/>som C har rader.<br/>
+          A &odot; C &ne; C &odot; A
+        </td>
+      </tr>
+    </table>
+  </div> <!-- end of tablet and pc version logiske matriser -->
 
   <p>
     <span class="uppercase-red"> Inverse matriser: </span><br/>
     En kvadratisk matrise A er inverterbar hvis det finnes en matrise
-    A<sup>-1</sup> slik at AA<sup>-1</sup> = A<sup>-1</sup>A = I.<br/>
+    A<sup>-1</sup> slik at <span>AA<sup>-1</sup> = A<sup>-1</sup>A = I.</span><br/>
     Hvis A er inverterbar må ad - bc &ne; 0.<br/> ad - bc kalles for matrisens
     determinant.
   </p>
   <picture>
     <img src="images/matrixInv.png" class="image" alt="Eksempel på
-    invers matrise">
+      invers matrise">
   </picture>
-
 
 </div> <!-- end of main -->
-</div> <!-- end of container phone version -->
-
-
-<!-- Tablet and pc version -->
-<div class="container hideOnPh"> <!-- Needs to wrap all content in body -->
-
-<div class="verticalBar">
-  <picture>
-    <!-- margin-left to override hoverefect. -->
-    <a href="index.html" style="margin-left: 0px;">
-      <img src="images/regelbokLogo1.png" class="logoImage"
-      alt="Regelboka. logo">
-    </a>
-  </picture>
-
-  <div class="menyStyle">
-    <a href="logikk.html">Logikk</a><br/>
-    <a href="mengder.html">Mengder</a><br/>
-    <a href="funksjoner.html">Funksjoner</a><br/>
-    <a href="folgerOgRekker.html">Følger og rekker</a><br/>
-    <a class="active" href="matriser.html">Matriser</a><br/>
-  </div>
-</div>
-
-<div class="main col-pc col-tab">
-<h1>Matriser</h1>
-
-  <p>
-    <span class="uppercase-red"> Matrise: </span>
-    Sett av elementer i rader og kolonner.
-    Dimensjonen til en matrise: RADER &times; KOLONNER.
-  </p>
-  <picture>
-    <img src="images/matrixDim.png" class="image" alt="Hoveddiagonalen
-    går fra nederste venstre hjørne til øverste høyre hjørne. Bidiagonalen
-    går fra øveste venstre hjørne til nederste høyre hjørne.">
-  </picture>
-
-  <p>
-    <span class="uppercase-red"> Matriseaddisjon: </span>
-    VIKTIG: Matrisene som legges sammen
-    <span style="text-decoration: underline;">må</span> ha samme
-    dimensjon!
-  </p>
-  <picture>
-    <img src="images/matrixAdd.png" class="image" alt="Eksempel på
-    matriseaddisjon">
-  </picture>
-
-  <p>
-    <span class="uppercase-red"> Matrisesubtraksjon: </span>
-    VIKTIG: Matrisene som legges sammen
-    <span style="text-decoration: underline;">må</span> ha samme
-    dimensjon!
-  </p>
-  <picture>
-    <img src="images/matrixSub.png" class="image" alt="Eksempel på
-    matrisesubtraksjon">
-  </picture>
-
-  <p>
-    <span class="uppercase-red"> Matrisemultiplikasjon: </span>
-    VIKTIG: AB finnes kun om antall kolonner i A er lik antall rader i B.
-    <br/>Hvis A har dimensjon m &times; n og B har n &times; k, så har AB
-    dimensjon m &times; k.
-  </p>
-  <picture>
-    <img src="images/matrixMult.png" class="image" alt="Eksempel på
-    matrisemultiplikasjon">
-  </picture>
-
-  <p>
-    Derfor er AB = BA bare hvis A og B er kvadratiske matriser (har
-    dimensjon m &times; m).<br/>
-    For kvadratiske matriser gjelder:
-  </p>
-  <picture>
-    <img src="images/matrixKvad.png" class="image" alt="A gange A = A^2,
-    A^1 = A og A^0 = I">
-  </picture>
-
-  <p>
-    <span class="uppercase-red"> Identitetsmatrisen: </span>
-    Også kalt enhetsmatrisen. Er en kvadratisk matrise og er kommutativ
-    fordi AI = A = IA.
-  </p>
-  <picture>
-    <img src="images/matrixId.png" class="image" alt="I = kvadratisk matrise
-    med 1-ere på hoveddiagonalen">
-  </picture>
-
-  <p>
-    <span class="uppercase-red"> Transponert matrise: </span>
-    Den matrisen vi får ved å bytte om rader og kolonner.<br/>
-    Legg merke til at hvis AB eksisterer, så blir (AB)<sup>T</sup>
-    = B<sup>T</sup>A<sup>T</sup>.
-  </p>
-  <picture>
-    <img src="images/matrixTrans.png" class="image" alt="Eksempel på
-    transponert matrise">
-  </picture>
-
-  <p>
-    <span class="uppercase-red"> Symmetri: </span>
-    En kvadratisk matrise er symmetrisk hvis A = A<sup>T</sup>.
-    Dvs. symmetrisk over hoveddiagonalen.
-  </p>
-  <picture>
-    <img src="images/matrixSym.png" class="image" alt="Eksempel på
-    symmetrisk matrise">
-  </picture>
-
-  <p>
-    <span class="uppercase-red"> Logiske matriser: </span>
-    En matrise der elementene er 0'ere eller 1'ere. 0 står for usann og
-    1 for sann.
-  </p>
-  <picture>
-    <img src="images/matrixAogBogC.png" class="image" alt="Viser hva matrise
-    A, B og C er for eksemplene under">
-  </picture>
-  <table class="tableScaling1">
-    <tr>
-      <th>Operator</th>
-      <th>Symbol</th>
-      <th>Utførelse</th>
-      <th>Merk at</th>
-    </tr>
-    <tr>
-      <td>Logisk<br/>eller</td>
-      <td>&or;</td>
-      <td>
-        <picture>
-          <img src="images/matrixLogEller.png" style="max-width: 100%;"
-          alt="Eksempel på logisk eller">
-        </picture>
-      </td>
-      <td>
-        1 &or; 1 = 1<br/>
-        1 &or; 0 = 0 &or; 1 = 1<br/>
-        0 &or; 0 = 0<br/>
-        A &and; B eksisterer<br/>dersom A og B<br/>har samme dimensjon.
-      </td>
-    </tr>
-    <tr>
-      <td>Logisk<br/>og</td>
-      <td>&and;</td>
-      <td>
-        <picture>
-          <img src="images/matrixLogOg.png" style="max-width: 100%;"
-          alt="Eksempel på logisk eller">
-        </picture>
-      </td>
-      <td>
-        1 &and; 1 = 1<br/>
-        1 &and; 0 = 0 &and; 1 = 0<br/>
-        0 &and; 0 = 0<br/>
-        A &and; B eksisterer<br/>dersom A og B<br/>har samme dimensjon.
-      </td>
-    </tr>
-    <tr>
-      <td>Logisk<br/>multiplikasjon</td>
-      <td>&odot;</td>
-      <td>
-        <picture>
-          <img src="images/matrixLogMult.png" style="max-width: 100%;"
-          alt="Eksempel på logisk eller">
-        </picture>
-      </td>
-      <td>
-        A &odot; C eksisterer<br/>dersom A har<br/>like mange kolonner
-        <br/>som C har rader.<br/>
-        A &odot; C &ne; C &odot; A
-      </td>
-    </tr>
-  </table>
-
-  <p>
-    <span class="uppercase-red"> Inverse matriser: </span>
-    En kvadratisk matrise A er inverterbar hvis det finnes en matrise
-    A<sup>-1</sup> slik at AA<sup>-1</sup> = A<sup>-1</sup>A = I.<br/>
-    Hvis A er inverterbar må ad - bc &ne; 0. ad - bc kalles for matrisens
-    determinant.
-  </p>
-  <picture>
-    <img src="images/matrixInv.png" class="image" alt="Eksempel på
-    invers matrise">
-  </picture>
-
-
-
-</div> <!-- end of main -->
-</div> <!-- end of container tab and pc version -->
+</div> <!-- end of container -->
 
 </body>
-
 </html>
