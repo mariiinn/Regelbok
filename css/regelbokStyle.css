@@ -44,6 +44,31 @@ sub, sup {
   text-decoration: underline;
 }
 
+.sourcesLinkStyle {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 1.5em;
+}
+
+.sourcesLinkStyle a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+}
+
+.sourcesLinkStyle a:hover {
+  text-decoration: underline;
+}
+
+.sources a {
+  text-decoration: none;
+  color: black;
+}
+
+.sources a:hover {
+  text-decoration: underline;
+}
+
 /* Phones */
 body {
   margin-top: 0px; /* No space over the content */
@@ -135,7 +160,7 @@ h1 {
     /* More padding */
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   /* Used in the fixed vertical menu that only tablet and pc have */
