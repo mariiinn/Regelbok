@@ -10,18 +10,22 @@
 
 <body>
 
+<!-- 'Container' contains everything in body -->
 <div class="container">
 
+<!-- Vertical navigation bar -->
 <div class="verticalBar">
+  <!-- margin-left 0px to override hoverefect.
+  (The links usually move 7 pixels to the right) -->
   <picture>
-    <!-- margin-left 0px to override hoverefect. -->
     <a href="index.html" style="margin-left: 0px;">
       <img src="images/regelbokLogo1.png" class="logoImage"
         alt="Regelboka. logo">
     </a>
   </picture>
 
-  <div class="menyStyle hideOnPh"> <!-- For tablet and pc only -->
+  <!-- For tablet and pc only -->
+  <div class="menyStyle hideOnPh">
     <p class="chapterText">Kapittel 1</p>
     <a class="active" href="logikk.html">Logikk</a>
 
@@ -33,6 +37,7 @@
   </div>
 </div>
 
+<!-- The main contentcolumn -->
 <div class="main">
   <h1>Logikk</h1>
 
@@ -58,6 +63,7 @@
     Selvmotsigelse. Et utsagn som alltid er usant.
   </p>
 
+  <!-- phone version -->
   <div class="hideOnTabAndPc">
     <p><span class="uppercase-red"> Logiske operatorer: </span></p>
     <ul style="margin-top: -10px;">
@@ -70,6 +76,7 @@
     </ul>
   </div> <!-- end of phone version logiske oparatorer -->
 
+  <!-- tablet and pc version -->
   <div class ="hideOnPh showOnTabAndPc">
     <p><span class="uppercase-red"> Logiske operatorer: </span></p>
     <table class="tableScaling1" style="margin-top: -10px;">
@@ -143,6 +150,7 @@
     <li>"p hvis og bare hvis q"</li>
   </ul>
 
+  <!-- phone version -->
   <div class="hideOnTabAndPc">
     <p><span class="uppercase-red"> Sannhetsverditabeller: </span></p>
     <table style="margin-top: -10px;" class="spaceOverTable">
@@ -232,6 +240,7 @@
     </table>
   </div> <!-- end of phone version sannhetsverditabeller -->
 
+  <!-- tablet and pc version -->
   <div class ="hideOnPh showOnTabAndPc">
     <p><span class="uppercase-red"> Sannhetsverditabeller: </span></p>
     <table style="margin-top: -10px;" class="spaceOverTable">
@@ -298,7 +307,7 @@
     </table>
   </div> <!-- end of tablet and pc version sannhetsverditabeller-->
 
-  <p style="clear: both;"> <!-- No floating allowed to the right or left-->
+  <p>
     <span class="uppercase-red"> Kontrapositive utsagn: </span></br>
     p &rarr; q har det kontrapositive utsagnet &not;q &rarr; &not;p, og er
     <span style="text-decoration: underline;"> ekvavilente</span>.
@@ -349,7 +358,7 @@
     <img src="images/krets.png" class="image" alt="Logisk krets eksempel">
   </picture>
 
-
+  <!-- phone version -->
   <div class="hideOnTabAndPc">
     <p><span class="uppercase-red"> Kvantorer: </span></p>
     <ul style="margin-top: -10px;">
@@ -364,6 +373,7 @@
     </ul>
   </div> <!-- end of phone version kvantorer -->
 
+  <!-- tablet and pc version -->
   <div class="hideOnPh showOnTabAndPc">
     <p><span class="uppercase-red"> Kvantorer: </span></p>
     <table class="tableScaling1" style="margin-top: -10px;">
@@ -397,6 +407,14 @@
       = <span>&exist;x&forall;y &not;P(x)</span></li>
     </ul>
   </p>
+
+  <!-- Link to sources -->
+  <div class="sourcesLinkStyle">
+    &Gg;
+    <a href="kilder.html">
+      Kilder
+    </a>
+  </div>
 
 </div> <!-- end of main -->
 </div> <!-- end of container -->
