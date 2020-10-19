@@ -27,7 +27,7 @@ sub, sup {
   font-size: 0.5em;
 }
 
-/* Links */
+/* Links on the navigationbar */
 .verticalBar a {
   color: black;
   text-decoration: none; /*Remove underline from link*/
@@ -44,6 +44,7 @@ sub, sup {
   text-decoration: underline;
 }
 
+/* Style of link directing to the sources-page */
 .sourcesLinkStyle {
   margin-top: 10px;
   text-align: right;
@@ -60,6 +61,7 @@ sub, sup {
   text-decoration: underline;
 }
 
+/* Style of links on the sources-page */
 .sources a {
   text-decoration: none;
   color: black;
@@ -69,7 +71,7 @@ sub, sup {
   text-decoration: underline;
 }
 
-/* Phones */
+/* PHONES */
 body {
   margin-top: 0px; /* No space over the content */
   margin-bottom: 50px;
@@ -83,17 +85,18 @@ h1 {
   font-size: 2em; /* Heading size on phone */
 }
 
-/*.col-ph {width: auto;}*/
 .logoImage {width: 100%;} /*Logo image size for phone */
-.image {width: 100%;} /* Image scaling */
+.image {width: 100%;} /* Image scaling for phone and tablet */
 
-/*Flex boxes*/
+/* Grid. Needs to wrap all content */
 .container {
   display: grid;
+  /* Name the start and end of column. Easier to visualize */
   grid-template-columns: [col-1-start] 0.1fr [col-2-start] 1fr [col-3-start]
     0.1fr [col-3-end];
 }
 
+/* Navigationbar */
 .verticalBar {
   margin-left: 8%;
   width: 79%;
@@ -102,9 +105,10 @@ h1 {
   position: fixed; /*Move with the screen*/
 }
 
+/* Main content */
 .main {
   background-color: white;
-  padding-top: 37%;
+  padding-top: 37%; /* Content need to be bellow the logo */
   grid-column: col-2-start/col-3-start;
   grid-row: auto;
   /* Space around text in main */
@@ -113,21 +117,21 @@ h1 {
   padding-bottom: 30px;
 }
 
-.hideOnPh {display: none;} /* Hide this when the screen is phonescale */
+.hideOnPh {display: none;} /* Hide content when the screen is phonescaled */
 
-/* tablets */
+/* TABLETS */
 @media only screen and (min-width: 600px) {
   body {
-    margin-top: 10px; /* Want space over the content now */
+    margin-top: 10px; /* Want space over the main box now */
   }
 
   h1 {
-    font-size: 3em; /* Heading size on tablet */
+    font-size: 3em; /* Heading size on tablet and pc */
   }
 
-  /*.col-tab {width: auto;}*/
   .logoImage {width: 200px;} /*Logo image size for tablet */
 
+  /* Style of Chapter 1 and Chapter 2 in the navigationbar */
   .chapterText {
     font-size: 30px;
     border-bottom: 2px solid black;
@@ -135,6 +139,7 @@ h1 {
     margin-bottom: 5px;
   }
 
+  /* Grid layout for tablet */
   .container {
     display: grid;
     grid-template-columns: [col-1-start] 200px [col-2-start] 0.5fr [col-3-start]
@@ -149,7 +154,6 @@ h1 {
     height: auto;
     background-color: white;
     position: fixed; /*Move with the screen*/
-    /* New */
     padding-bottom: 5px; /* Extra padding under the links */
   }
 
@@ -184,16 +188,16 @@ h1 {
   .showOnTabAndPc {display: block;} /* Show content hidden on the phone version */
 }
 
-/* pc */
+/* PC */
 @media only screen and (min-width: 1000px) {
-  /*.col-pc {width: auto;}*/
   .logoImage {width: 300px;} /* Bigger logo */
   .image {width: 60%;} /* Image scaling */
 
   .chapterText {
-    font-size: 40px;
+    font-size: 40px; /* Bigger font */
   }
 
+  /* Grid layout for pc */
   .container {
     display: grid;
     grid-template-columns: [col-1-start] 300px [col-2-start] 0.5fr [col-3-start]
@@ -216,6 +220,4 @@ h1 {
   .tableScaling3 {
     font-size: 1em; /* Bigger text in tables on pc */
   }
-
-  /*.hideOnPc {display: none;}*/ /* Hide this on pc */
 }
